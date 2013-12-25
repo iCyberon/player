@@ -422,8 +422,8 @@
 		8B8E2BB3173B57AD00C6A205 /* LastfmAccountServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LastfmAccountServiceViewController.xib; sourceTree = "<group>"; };
 		8B93819115B0CD99006D68AD /* ScriptingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptingController.h; sourceTree = "<group>"; };
 		8B93819215B0CD99006D68AD /* ScriptingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptingController.m; sourceTree = "<group>"; };
-		8B94F121163CAFB4008FA38B /* NS(Attributed)String+Geometrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NS(Attributed)String+Geometrics.h"; sourceTree = "<group>"; };
-		8B94F122163CAFB4008FA38B /* NS(Attributed)String+Geometrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NS(Attributed)String+Geometrics.m"; sourceTree = "<group>"; };
+		8B94F121163CAFB4008FA38B /* NS(Attributed)String+Geometrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NS(Attributed)String+Geometrics.h"; path = "Source/Views/ErrorHandling/NS(Attributed)String+Geometrics.h"; sourceTree = SOURCE_ROOT; };
+		8B94F122163CAFB4008FA38B /* NS(Attributed)String+Geometrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NS(Attributed)String+Geometrics.m"; path = "Source/Views/ErrorHandling/NS(Attributed)String+Geometrics.m"; sourceTree = SOURCE_ROOT; };
 		8B98421114F424C5001E446B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		8BA53B3415CD81BB00D3AA02 /* BottomBarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomBarButtonCell.h; sourceTree = "<group>"; };
 		8BA53B3515CD81BB00D3AA02 /* BottomBarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomBarButtonCell.m; sourceTree = "<group>"; };
@@ -551,7 +551,8 @@
 				8B82294614B51BA100D8EB9B /* Transformers */,
 			);
 			name = Views;
-			sourceTree = "<group>";
+			path = Source/Views;
+			sourceTree = SOURCE_ROOT;
 		};
 		1E57436A131063A00023BFE5 /* Last.fm */ = {
 			isa = PBXGroup;
@@ -562,7 +563,8 @@
 				1E5743D7131066A70023BFE5 /* LastFMSession.m */,
 			);
 			name = Last.fm;
-			sourceTree = "<group>";
+			path = Source/Model/Last.fm;
+			sourceTree = SOURCE_ROOT;
 		};
 		1E61F42D12DD40140076C45E /* Main Window */ = {
 			isa = PBXGroup;
@@ -616,7 +618,8 @@
 				8BA53B3515CD81BB00D3AA02 /* BottomBarButtonCell.m */,
 			);
 			name = Cells;
-			sourceTree = "<group>";
+			path = Source/Views/Cells;
+			sourceTree = SOURCE_ROOT;
 		};
 		1E963F66130DFCEE00AA0968 /* Library */ = {
 			isa = PBXGroup;
@@ -635,7 +638,8 @@
 				8BECBD1D161C94720067B46D /* SongQueryPromise.m */,
 			);
 			name = Library;
-			sourceTree = "<group>";
+			path = Source/Model/Library;
+			sourceTree = SOURCE_ROOT;
 		};
 		1EE9024B1274B81000FD6457 /* Model */ = {
 			isa = PBXGroup;
@@ -727,7 +731,8 @@
 				8B47457B15A4B39300ABD986 /* QueueTableScrollView.m */,
 			);
 			name = Queue;
-			sourceTree = "<group>";
+			path = Source/Views/Queue;
+			sourceTree = SOURCE_ROOT;
 		};
 		8B2494EE14AB9EAB00F33A1B /* Controls */ = {
 			isa = PBXGroup;
@@ -742,7 +747,8 @@
 				8B734F0D16502F5B0019CB00 /* SafeButton.m */,
 			);
 			name = Controls;
-			sourceTree = "<group>";
+			path = Source/Views/Controls;
+			sourceTree = SOURCE_ROOT;
 		};
 		8B339159157FE98F002AE2BD /* Preferences */ = {
 			isa = PBXGroup;
@@ -789,7 +795,8 @@
 				8B3B85D91528CFB000484474 /* RKBrowserView.m */,
 			);
 			name = Browser;
-			sourceTree = "<group>";
+			path = Source/Views/Browser;
+			sourceTree = SOURCE_ROOT;
 		};
 		8B3B863D1528F8D200484474 /* Now Playing */ = {
 			isa = PBXGroup;
@@ -804,7 +811,8 @@
 				8BE94D3F1607BF2500E44217 /* NowPlayingTextFieldCell.m */,
 			);
 			name = "Now Playing";
-			sourceTree = "<group>";
+			path = Source/Views/NowPlaying;
+			sourceTree = SOURCE_ROOT;
 		};
 		8B4EFA71162B2A2B00449CF5 /* Error Handling */ = {
 			isa = PBXGroup;
@@ -818,6 +826,7 @@
 				8B4EFA73162B2A4500449CF5 /* ErrorBannerButtonCell.m */,
 			);
 			name = "Error Handling";
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 		8B71F28A15A89EA70075018E /* Hot Keys */ = {
@@ -841,7 +850,8 @@
 				8B47458B15A4D53800ABD986 /* LyricsCache.m */,
 			);
 			name = Caches;
-			sourceTree = "<group>";
+			path = Source/Model/Caches;
+			sourceTree = SOURCE_ROOT;
 		};
 		8B7CB4E217586BAF00783674 /* Common */ = {
 			isa = PBXGroup;
@@ -914,7 +924,8 @@
 				8B82294814B51BCB00D8EB9B /* SimpleNumberTransformer.m */,
 			);
 			name = Transformers;
-			sourceTree = "<group>";
+			path = Source/Views/Transformers;
+			sourceTree = SOURCE_ROOT;
 		};
 		8B8E2B51173A071D00C6A205 /* Accounts */ = {
 			isa = PBXGroup;
@@ -945,7 +956,8 @@
 				8BCA9C1014F7E05F00E2D136 /* SRValidator.m */,
 			);
 			name = SRRecorderControl;
-			sourceTree = "<group>";
+			path = Source/Views/SRRecorderControl;
+			sourceTree = SOURCE_ROOT;
 		};
 		8BDE6B6B16D9C1730055EF6A /* Other */ = {
 			isa = PBXGroup;

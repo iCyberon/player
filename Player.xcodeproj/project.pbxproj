@@ -270,8 +270,8 @@
 		1EE97ACE124D81FE00AA4646 /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
 		1EE97B07124D853A00AA4646 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
 		1EE97C3E124E616900AA4646 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
-		1EE97C8B124E66EC00AA4646 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
-		1EE97C8C124E66EC00AA4646 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		1EE97C8B124E66EC00AA4646 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioPlayer.h; path = Source/Model/AudioPlayer.h; sourceTree = SOURCE_ROOT; };
+		1EE97C8C124E66EC00AA4646 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioPlayer.m; path = Source/Model/AudioPlayer.m; sourceTree = SOURCE_ROOT; };
 		256AC3F00F4B6AF500CF3369 /* Player_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -283,7 +283,7 @@
 		8B0C1E7814A7EFB9005B9914 /* HeaderLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderLabelView.m; sourceTree = "<group>"; };
 		8B12A4DE16A8853C00249E0F /* Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B12A62A16AE222600249E0F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		8B12A62D16AE259800249E0F /* FileEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileEnumerator.h; sourceTree = "<group>"; };
+		8B12A62D16AE259800249E0F /* FileEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileEnumerator.h; path = Source/Model/FileEnumerator.h; sourceTree = SOURCE_ROOT; };
 		8B183475158E4E5C007D6859 /* Genres.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Genres.plist; sourceTree = "<group>"; };
 		8B2494C314AA34D400F33A1B /* BackgroundArtworkDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundArtworkDisplayView.h; sourceTree = "<group>"; };
 		8B2494C414AA34D400F33A1B /* BackgroundArtworkDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundArtworkDisplayView.m; sourceTree = "<group>"; };
@@ -408,8 +408,8 @@
 		8B7CB54517586BB600783674 /* RoundaboutKitMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundaboutKitMac.h; sourceTree = "<group>"; };
 		8B7CB5BA1759BF6B00783674 /* NSBezierPath+MCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+MCAdditions.h"; sourceTree = "<group>"; };
 		8B7CB5BB1759BF6B00783674 /* NSBezierPath+MCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+MCAdditions.m"; sourceTree = "<group>"; };
-		8B7CB5BE1759BF8000783674 /* NSObject+AssociatedValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedValues.h"; sourceTree = "<group>"; };
-		8B7CB5BF1759BF8000783674 /* NSObject+AssociatedValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedValues.m"; sourceTree = "<group>"; };
+		8B7CB5BE1759BF8000783674 /* NSObject+AssociatedValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+AssociatedValues.h"; path = "Source/Model/NSObject+AssociatedValues.h"; sourceTree = SOURCE_ROOT; };
+		8B7CB5BF1759BF8000783674 /* NSObject+AssociatedValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AssociatedValues.m"; path = "Source/Model/NSObject+AssociatedValues.m"; sourceTree = SOURCE_ROOT; };
 		8B82294714B51BCB00D8EB9B /* SimpleNumberTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleNumberTransformer.h; sourceTree = "<group>"; };
 		8B82294814B51BCB00D8EB9B /* SimpleNumberTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleNumberTransformer.m; sourceTree = "<group>"; };
 		8B8E2B9E173B484E00C6A205 /* AccountServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountServiceViewController.h; sourceTree = "<group>"; };
@@ -526,13 +526,6 @@
 				8B12A4DE16A8853C00249E0F /* Player.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1E12E5DE127A5C06005D0D3D /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 		1E12E709127B319C005D0D3D /* Views */ = {
@@ -663,12 +656,8 @@
 		29B97314FDCFA39411CA2CEA /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				8B7CB52617586BB500783674 /* RoundaboutKitMac */,
-				8B7CB4E217586BAF00783674 /* Common */,
-				1EE9024B1274B81000FD6457 /* Model */,
-				1E12E709127B319C005D0D3D /* Views */,
-				080E96DDFE201D6D7F000001 /* Controllers */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				E2D8BD42186AA18C004CAC2D /* Externals */,
+				E2D8BD43186AA197004CAC2D /* Source */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -689,7 +678,6 @@
 			isa = PBXGroup;
 			children = (
 				FCD4517F161B952400E167C7 /* Fonts */,
-				1E12E5DE127A5C06005D0D3D /* Images */,
 				E2D8BD2D186A8819004CAC2D /* Player.xcassets */,
 				E2D8BD32186A9B63004CAC2D /* NowPlaying.xcassets */,
 				E2D8BD3E186A9F21004CAC2D /* ScrubbingBar.xcassets */,
@@ -841,7 +829,8 @@
 				8BCA9C2A14F7E9C200E2D136 /* HotKeyDispatcher.m */,
 			);
 			name = "Hot Keys";
-			sourceTree = "<group>";
+			path = Source/Model/Hotkeys;
+			sourceTree = SOURCE_ROOT;
 		};
 		8B71F2A615A8B2A60075018E /* Caches */ = {
 			isa = PBXGroup;
@@ -872,8 +861,9 @@
 				8B7CB4F517586BAF00783674 /* SSKeychain.h */,
 				8B7CB4F617586BAF00783674 /* SSKeychain.m */,
 			);
-			path = Common;
-			sourceTree = "<group>";
+			name = Common;
+			path = Source/Common;
+			sourceTree = SOURCE_ROOT;
 		};
 		8B7CB52617586BB500783674 /* RoundaboutKitMac */ = {
 			isa = PBXGroup;
@@ -989,6 +979,26 @@
 				8BE806EC1792177A00DFEC35 /* Tests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E2D8BD42186AA18C004CAC2D /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				8B7CB52617586BB500783674 /* RoundaboutKitMac */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+		E2D8BD43186AA197004CAC2D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8B7CB4E217586BAF00783674 /* Common */,
+				1EE9024B1274B81000FD6457 /* Model */,
+				1E12E709127B319C005D0D3D /* Views */,
+				080E96DDFE201D6D7F000001 /* Controllers */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 		FCD4517F161B952400E167C7 /* Fonts */ = {

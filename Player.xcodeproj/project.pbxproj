@@ -139,7 +139,6 @@
 		8B8E2BB7173B57AD00C6A205 /* LastfmAccountServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8E2BB3173B57AD00C6A205 /* LastfmAccountServiceViewController.xib */; };
 		8B920BDC1771656800539974 /* AccountRemovalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B022C98173B5FF300B8FF79 /* AccountRemovalViewController.xib */; };
 		8BC91C8517542BB50035AD4E /* AccountRemovalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B022C97173B5FF300B8FF79 /* AccountRemovalViewController.m */; };
-		8BD2D74E177BEA9000736465 /* SocialPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD2D74B177BEA9000736465 /* SocialPane.xib */; };
 		8BD2D74F177BEA9000736465 /* SocialPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2D74C177BEA9000736465 /* SocialPane.m */; };
 		8BE4F6721724755E00A0A2B5 /* PlayerApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4F6701724755E00A0A2B5 /* PlayerApplication.m */; };
 		8BE806EF1792178A00DFEC35 /* RoundaboutKitMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE806EA1792177A00DFEC35 /* RoundaboutKitMac.framework */; };
@@ -152,6 +151,7 @@
 		E2D8BD3D186A9B92004CAC2D /* BottomBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8BD3C186A9B92004CAC2D /* BottomBar.xcassets */; };
 		E2D8BD3F186A9F21004CAC2D /* ScrubbingBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8BD3E186A9F21004CAC2D /* ScrubbingBar.xcassets */; };
 		E2D8BD41186AA04D004CAC2D /* BrowserIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8BD40186AA04D004CAC2D /* BrowserIcons.xcassets */; };
+		E2D8BD46186B51C9004CAC2D /* SocialPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D8BD44186B51C9004CAC2D /* SocialPane.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -229,8 +229,8 @@
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1E12E5E0127A5C18005D0D3D /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainWindow.xib; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
-		1E12E688127B10F4005D0D3D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1E12E689127B10F4005D0D3D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1E12E688127B10F4005D0D3D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Source/Controllers/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		1E12E689127B10F4005D0D3D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Source/Controllers/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		1E12E68B127B1104005D0D3D /* MainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindow.h; sourceTree = "<group>"; };
 		1E12E68C127B1104005D0D3D /* MainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindow.m; sourceTree = "<group>"; };
 		1E21063212692CEE006DD429 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
@@ -276,9 +276,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		8B022C96173B5FF300B8FF79 /* AccountRemovalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountRemovalViewController.h; sourceTree = "<group>"; };
-		8B022C97173B5FF300B8FF79 /* AccountRemovalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountRemovalViewController.m; sourceTree = "<group>"; };
-		8B022C98173B5FF300B8FF79 /* AccountRemovalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountRemovalViewController.xib; sourceTree = "<group>"; };
+		8B022C96173B5FF300B8FF79 /* AccountRemovalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountRemovalViewController.h; path = Source/Controllers/Preferences/Accounts/AccountRemovalViewController.h; sourceTree = SOURCE_ROOT; };
+		8B022C97173B5FF300B8FF79 /* AccountRemovalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountRemovalViewController.m; path = Source/Controllers/Preferences/Accounts/AccountRemovalViewController.m; sourceTree = SOURCE_ROOT; };
+		8B022C98173B5FF300B8FF79 /* AccountRemovalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccountRemovalViewController.xib; path = Source/Controllers/Preferences/Accounts/English.lproj/AccountRemovalViewController.xib; sourceTree = SOURCE_ROOT; };
 		8B0C1E7714A7EFB9005B9914 /* HeaderLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderLabelView.h; sourceTree = "<group>"; };
 		8B0C1E7814A7EFB9005B9914 /* HeaderLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderLabelView.m; sourceTree = "<group>"; };
 		8B12A4DE16A8853C00249E0F /* Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,7 +339,7 @@
 		8B47458B15A4D53800ABD986 /* LyricsCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsCache.m; sourceTree = "<group>"; };
 		8B4AC8CF16C4C19E00DAE7DE /* AdvancedPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedPane.h; sourceTree = "<group>"; };
 		8B4AC8D016C4C19E00DAE7DE /* AdvancedPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedPane.m; sourceTree = "<group>"; };
-		8B4AC8D116C4C19E00DAE7DE /* AdvancedPane.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvancedPane.xib; sourceTree = "<group>"; };
+		8B4AC8D116C4C19E00DAE7DE /* AdvancedPane.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AdvancedPane.xib; path = Source/Controllers/Preferences/English.lproj/AdvancedPane.xib; sourceTree = SOURCE_ROOT; };
 		8B4EFA72162B2A4500449CF5 /* ErrorBannerButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorBannerButtonCell.h; sourceTree = "<group>"; };
 		8B4EFA73162B2A4500449CF5 /* ErrorBannerButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorBannerButtonCell.m; sourceTree = "<group>"; };
 		8B607461158E48FD0040CEB4 /* ExFMTrendingSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExFMTrendingSourceController.h; sourceTree = "<group>"; };
@@ -356,7 +356,7 @@
 		8B71F27515A899820075018E /* EtchedTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EtchedTextFieldCell.m; sourceTree = "<group>"; };
 		8B71F27615A899820075018E /* ShadowedTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowedTextFieldCell.h; sourceTree = "<group>"; };
 		8B71F27715A899820075018E /* ShadowedTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowedTextFieldCell.m; sourceTree = "<group>"; };
-		8B71F2A715A8B3EA0075018E /* HotKeysPane.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotKeysPane.xib; sourceTree = "<group>"; };
+		8B71F2A715A8B3EA0075018E /* HotKeysPane.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HotKeysPane.xib; path = Source/Controllers/Preferences/English.lproj/HotKeysPane.xib; sourceTree = SOURCE_ROOT; };
 		8B71F2A915A8B4040075018E /* HotKeysPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotKeysPane.h; sourceTree = "<group>"; };
 		8B71F2AA15A8B4040075018E /* HotKeysPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotKeysPane.m; sourceTree = "<group>"; };
 		8B734F0C16502F5B0019CB00 /* SafeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeButton.h; sourceTree = "<group>"; };
@@ -420,8 +420,8 @@
 		8B8E2BB1173B57AD00C6A205 /* LastfmAccountServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastfmAccountServiceViewController.h; sourceTree = "<group>"; };
 		8B8E2BB2173B57AD00C6A205 /* LastfmAccountServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastfmAccountServiceViewController.m; sourceTree = "<group>"; };
 		8B8E2BB3173B57AD00C6A205 /* LastfmAccountServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LastfmAccountServiceViewController.xib; sourceTree = "<group>"; };
-		8B93819115B0CD99006D68AD /* ScriptingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptingController.h; sourceTree = "<group>"; };
-		8B93819215B0CD99006D68AD /* ScriptingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptingController.m; sourceTree = "<group>"; };
+		8B93819115B0CD99006D68AD /* ScriptingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScriptingController.h; path = Source/Controllers/ScriptingController.h; sourceTree = SOURCE_ROOT; };
+		8B93819215B0CD99006D68AD /* ScriptingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScriptingController.m; path = Source/Controllers/ScriptingController.m; sourceTree = SOURCE_ROOT; };
 		8B94F121163CAFB4008FA38B /* NS(Attributed)String+Geometrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NS(Attributed)String+Geometrics.h"; path = "Source/Views/ErrorHandling/NS(Attributed)String+Geometrics.h"; sourceTree = SOURCE_ROOT; };
 		8B94F122163CAFB4008FA38B /* NS(Attributed)String+Geometrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NS(Attributed)String+Geometrics.m"; path = "Source/Views/ErrorHandling/NS(Attributed)String+Geometrics.m"; sourceTree = SOURCE_ROOT; };
 		8B98421114F424C5001E446B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
@@ -448,9 +448,8 @@
 		8BCD99D0156811FB0029465E /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		8BCD99E6156836CA0029465E /* ExploreBrowserLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreBrowserLevel.h; sourceTree = "<group>"; };
 		8BCD99E7156836CA0029465E /* ExploreBrowserLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreBrowserLevel.m; sourceTree = "<group>"; };
-		8BD2D74B177BEA9000736465 /* SocialPane.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialPane.xib; sourceTree = "<group>"; };
-		8BD2D74C177BEA9000736465 /* SocialPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialPane.m; sourceTree = "<group>"; };
-		8BD2D74D177BEA9000736465 /* SocialPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialPane.h; sourceTree = "<group>"; };
+		8BD2D74C177BEA9000736465 /* SocialPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialPane.m; path = Source/Controllers/Preferences/Accounts/SocialPane.m; sourceTree = SOURCE_ROOT; };
+		8BD2D74D177BEA9000736465 /* SocialPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialPane.h; path = Source/Controllers/Preferences/Accounts/SocialPane.h; sourceTree = SOURCE_ROOT; };
 		8BE4F66F1724755E00A0A2B5 /* PlayerApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerApplication.h; sourceTree = "<group>"; };
 		8BE4F6701724755E00A0A2B5 /* PlayerApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerApplication.m; sourceTree = "<group>"; };
 		8BE806E11792177A00DFEC35 /* RoundaboutKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RoundaboutKit.xcodeproj; path = External/RoundaboutKit/RoundaboutKit.xcodeproj; sourceTree = "<group>"; };
@@ -476,6 +475,7 @@
 		E2D8BD3C186A9B92004CAC2D /* BottomBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BottomBar.xcassets; sourceTree = "<group>"; };
 		E2D8BD3E186A9F21004CAC2D /* ScrubbingBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ScrubbingBar.xcassets; sourceTree = "<group>"; };
 		E2D8BD40186AA04D004CAC2D /* BrowserIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BrowserIcons.xcassets; sourceTree = "<group>"; };
+		E2D8BD45186B51C9004CAC2D /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Accounts/English.lproj/SocialPane.xib; sourceTree = "<group>"; };
 		FCA1E34D162CA23B00A2D186 /* MavenProBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MavenProBold.otf; sourceTree = "<group>"; };
 		FCD4517B161B8EFD00E167C7 /* MavenProMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MavenProMedium.otf; sourceTree = "<group>"; };
 		FCD4517C161B8EFE00E167C7 /* MavenProRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MavenProRegular.otf; sourceTree = "<group>"; };
@@ -773,7 +773,8 @@
 				8B4AC8D116C4C19E00DAE7DE /* AdvancedPane.xib */,
 			);
 			name = Preferences;
-			sourceTree = "<group>";
+			path = Source/Controllers/Preferences;
+			sourceTree = SOURCE_ROOT;
 		};
 		8B3B85CE1528CF9C00484474 /* Browser */ = {
 			isa = PBXGroup;
@@ -932,7 +933,7 @@
 			children = (
 				8BD2D74D177BEA9000736465 /* SocialPane.h */,
 				8BD2D74C177BEA9000736465 /* SocialPane.m */,
-				8BD2D74B177BEA9000736465 /* SocialPane.xib */,
+				E2D8BD44186B51C9004CAC2D /* SocialPane.xib */,
 				8BE4F6981724C33E00A0A2B5 /* Service View Controllers */,
 				8B022C96173B5FF300B8FF79 /* AccountRemovalViewController.h */,
 				8B022C97173B5FF300B8FF79 /* AccountRemovalViewController.m */,
@@ -1125,8 +1126,8 @@
 			files = (
 				8B12A3C116A8853C00249E0F /* InfoPlist.strings in Resources */,
 				8B12A3C216A8853C00249E0F /* MainMenu.xib in Resources */,
-				8BD2D74E177BEA9000736465 /* SocialPane.xib in Resources */,
 				E2D8BD3D186A9B92004CAC2D /* BottomBar.xcassets in Resources */,
+				E2D8BD46186B51C9004CAC2D /* SocialPane.xib in Resources */,
 				8B12A3CD16A8853C00249E0F /* MainWindow.xib in Resources */,
 				8B12A3CE16A8853C00249E0F /* UserDefaults.plist in Resources */,
 				8B12A3D716A8853C00249E0F /* PreferencesWindow.xib in Resources */,
@@ -1289,7 +1290,8 @@
 				1DDD58150DA1D0A300B32029 /* English */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
+			path = Source/Controllers;
+			sourceTree = SOURCE_ROOT;
 		};
 		1E12E5E2127A5C1A005D0D3D /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
@@ -1321,6 +1323,14 @@
 				8B33916A157FEECC002AE2BD /* English */,
 			);
 			name = ArtModePane.xib;
+			sourceTree = "<group>";
+		};
+		E2D8BD44186B51C9004CAC2D /* SocialPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2D8BD45186B51C9004CAC2D /* English */,
+			);
+			name = SocialPane.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

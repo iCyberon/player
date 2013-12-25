@@ -31,7 +31,7 @@
         mLibrary = [Library sharedLibrary];
         
         mFriendActivityLevelPlaylist = [[Playlist alloc] initWithName:@"Recently Loved by Friends"
-                                                                songs:[NSArray array]
+                                                                songs:@[]
                                                          playlistType:kPlaylistTypeFriendsLovedSongs];
         
         [[NSNotificationCenter defaultCenter] addObserver:self
@@ -177,12 +177,12 @@
     if(item == mFriendActivityLevelPlaylist)
     {
         if(!mFriendActivityLevel)
-            mFriendActivityLevel = [FriendActivityBrowserLevel new];
+            mFriendActivityLevel = [[FriendActivityBrowserLevel alloc] init];
         
         return mFriendActivityLevel;
     }
     
-    SongsBrowserLevel *songBrowserLevel = [SongsBrowserLevel new];
+    SongsBrowserLevel *songBrowserLevel = [[SongsBrowserLevel alloc] init];
     songBrowserLevel.parent = item;
     
     if(item.playlistType == kPlaylistTypeLovedSongs)

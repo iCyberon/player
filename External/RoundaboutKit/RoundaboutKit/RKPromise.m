@@ -89,14 +89,14 @@ static NSString *RKPromiseStateGetString(RKPromiseState state)
 
 + (instancetype)acceptedPromiseWithValue:(id)value
 {
-    RKPromise *promise = [self new];
+    RKPromise *promise = [[self alloc] init];
     [promise accept:value];
     return promise;
 }
 
 + (instancetype)rejectedPromiseWithError:(NSError *)error
 {
-    RKPromise *promise = [self new];
+    RKPromise *promise = [[self alloc] init];
     [promise reject:error];
     return promise;
 }
@@ -107,7 +107,7 @@ static NSString *RKPromiseStateGetString(RKPromiseState state)
 {
     NSParameterAssert(promises);
     
-    RKPromise *whenPromise = [RKPromise new];
+    RKPromise *whenPromise = [[RKPromise alloc] init];
     
     NSOperationQueue *realizationQueue = [RKQueueManager commonQueue];
     [realizationQueue addOperationWithBlock:^{

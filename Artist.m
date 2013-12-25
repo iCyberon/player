@@ -17,7 +17,7 @@
 	if((self = [super init]))
 	{
 		mName = [name copy];
-		mAlbums = [NSMutableArray new];
+		mAlbums = [[NSMutableArray alloc] init];
 		mIsCompilationContainer = isCompilationContainer;
 	}
 	

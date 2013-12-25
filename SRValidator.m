@@ -54,11 +54,9 @@
                     SRLoc(@"The key combination \"%@\" can't be used because %@."), 
                     SRReadableStringForCarbonModifierFlagsAndKeyCode( flags, keyCode ),
                     ( delegateReason && [delegateReason length] ) ? delegateReason : @"it's already used"];
-                NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-										  description, NSLocalizedDescriptionKey,
-										  recoverySuggestion, NSLocalizedRecoverySuggestionErrorKey,
-										  [NSArray arrayWithObject:@"OK"], NSLocalizedRecoveryOptionsErrorKey, // Is this needed? Shouldn't it show 'OK' by default? -AK
-										  nil];
+                NSDictionary *userInfo = @{ NSLocalizedDescriptionKey : description,
+										    NSLocalizedRecoverySuggestionErrorKey : recoverySuggestion,
+										    NSLocalizedRecoveryOptionsErrorKey : @[@"OK"] }; // Is this needed? Shouldn't it show 'OK' by default? -AK
                 *error = [NSError errorWithDomain:NSCocoaErrorDomain code:0 userInfo:userInfo];
             }
 			return YES;
@@ -75,7 +73,7 @@
 	if ( err != noErr ) return YES;
 
 	// Not copying the array like this results in a leak on according to the Leaks Instrument
-	NSArray *globalHotKeys = [NSArray arrayWithArray:(__bridge NSArray *)tempArray];
+	NSArray *globalHotKeys = @[(__bridge NSArray *)tempArray];
 
 	if ( tempArray ) CFRelease(tempArray);
 	
@@ -131,11 +129,9 @@
                 NSString *recoverySuggestion = [NSString stringWithFormat: 
                     SRLoc(@"The key combination \"%@\" can't be used because it's already used by a system-wide keyboard shortcut. (If you really want to use this key combination, most shortcuts can be changed in the Keyboard & Mouse panel in System Preferences.)"), 
                     SRReadableStringForCarbonModifierFlagsAndKeyCode( flags, keyCode )];
-				NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-										  description, NSLocalizedDescriptionKey,
-										  recoverySuggestion, NSLocalizedRecoverySuggestionErrorKey,
-										  [NSArray arrayWithObject:@"OK"], NSLocalizedRecoveryOptionsErrorKey,
-										  nil];
+                NSDictionary *userInfo = @{ NSLocalizedDescriptionKey : description,
+										    NSLocalizedRecoverySuggestionErrorKey : recoverySuggestion,
+										    NSLocalizedRecoveryOptionsErrorKey : @[@"OK"] }; // Is this needed? Shouldn't it show 'OK' by default? -AK
                 *error = [NSError errorWithDomain:NSCocoaErrorDomain code:0 userInfo:userInfo];
             }
             return YES;
@@ -210,11 +206,9 @@
                         SRLoc(@"The key combination \"%@\" can't be used because it's already used by the menu item \"%@\"."), 
                         SRReadableStringForCocoaModifierFlagsAndKeyCode( menuItemModifierFlags, keyCode ),
                         [menuItem title]];
-                    NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-											  description, NSLocalizedDescriptionKey,
-											  recoverySuggestion, NSLocalizedRecoverySuggestionErrorKey,
-											  [NSArray arrayWithObject:@"OK"], NSLocalizedRecoveryOptionsErrorKey,
-											  nil];
+                    NSDictionary *userInfo = @{ NSLocalizedDescriptionKey : description,
+                                                NSLocalizedRecoverySuggestionErrorKey : recoverySuggestion,
+                                                NSLocalizedRecoveryOptionsErrorKey : @[@"OK"] }; // Is this needed? Shouldn't it show 'OK' by default? -AK
                     *error = [NSError errorWithDomain:NSCocoaErrorDomain code:0 userInfo:userInfo];
                 }
 				return YES;

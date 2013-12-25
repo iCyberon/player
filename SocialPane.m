@@ -45,7 +45,7 @@
 	if((self = [super init]))
 	{
 		mScrobbler = [LastFMSession defaultSession];
-		mCachedUserInfo = [NSMutableDictionary new];
+		mCachedUserInfo = [[NSMutableDictionary alloc] init];
 		
 		mExfmSession = [ExfmSession defaultSession];
 	}
@@ -305,7 +305,7 @@
 	if(self.currentSheet)
 		return;
 	
-    self.currentSheet = [RKSideSheetView new];
+    self.currentSheet = [[RKSideSheetView alloc] init];
     
     ExfmAccountServiceViewController *exfmAccountController = [[ExfmAccountServiceViewController alloc] initWithServiceDescriptor:[ServiceDescriptor descriptorWithIdentifier:kAccountServiceIdentifierExfm] completionHandler:^(BOOL succeeded) {
         [self willChangeValueForKey:@"isExFMAuthorized"];
@@ -346,15 +346,17 @@
 	if(self.currentSheet)
 		return;
 	
-    self.currentSheet = [RKSideSheetView new];
-    
-    LastfmAccountServiceViewController *lastfmAccountController = [[LastfmAccountServiceViewController alloc] initWithServiceDescriptor:[ServiceDescriptor descriptorWithIdentifier:kAccountServiceIdentifierLastfm] completionHandler:^(BOOL succeeded) {
+    self.currentSheet = [[RKSideSheetView alloc] init];
+
+    LastfmAccountServiceViewController *lastfmAccountController = [[LastfmAccountServiceViewController alloc] initWithServiceDescriptor:[ServiceDescriptor descriptorWithIdentifier:kAccountServiceIdentifierLastfm] completionHandler:^(BOOL succeeded)
+    {
         [self willChangeValueForKey:@"isLastFMAuthorized"];
         [self didChangeValueForKey:@"isLastFMAuthorized"];
         
         [self fetchLastFMUserIcon];
-        
-        [self.currentSheet dismiss:YES completionHandler:^{
+
+        [self.currentSheet dismiss:YES completionHandler:^
+        {
             self.currentSheet = nil;
         }];
     }];

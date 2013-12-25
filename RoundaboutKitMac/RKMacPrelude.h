@@ -14,7 +14,7 @@
 
 RK_INLINE NSShadow *RKShadowMake(NSColor *color, CGFloat blurRadius, NSSize offset)
 {
-	NSShadow *shadow = [NSShadow new];
+	NSShadow *shadow = [[NSShadow alloc] init];
 	
 	[shadow setShadowColor:color];
 	[shadow setShadowBlurRadius:blurRadius];

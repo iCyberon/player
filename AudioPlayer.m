@@ -59,7 +59,7 @@ AudioPlayer *Player = nil;
 {
 	static dispatch_once_t creationPredicate = 0;
 	dispatch_once(&creationPredicate, ^{
-		Player = [AudioPlayer new];
+		Player = [[AudioPlayer alloc] init];
 	});
 	
 	return Player;
@@ -77,7 +77,7 @@ AudioPlayer *Player = nil;
 	if(mPlayer)
 		return;
 	
-	mPlayer = [AVPlayer new];
+	mPlayer = [[AVPlayer alloc] init];
 	mPlayer.actionAtItemEnd = AVPlayerActionAtItemEndPause;
 	mPlayer.volume = RKGetPersistentFloat(kVolumeDefaultsKey);
 	
@@ -502,7 +502,8 @@ static void SystemSleepCallback(void *refCon, io_service_t service, natural_t me
 
 - (id)init
 {
-	if((self = [super init]))
+    self = [super init];
+	if( self != nil )
 	{
 		//We observe changes to the default output device so we can
 		//pause playback when a user unplugs headphones, if requested.
@@ -533,23 +534,23 @@ static void SystemSleepCallback(void *refCon, io_service_t service, natural_t me
         mSessionID = (__bridge_transfer NSString *)CFUUIDCreateString(kCFAllocatorDefault, uuid);
         CFRelease(uuid);
 		
-		CFNotificationCenterAddObserver(CFNotificationCenterGetDistributedCenter(), 
-										(__bridge void *)self, 
-										&PKAudioPlayerDidBroadcastPresence, 
-										PKAudioPlayerDidBroadcastPresenceNotification, 
-										NULL, 
-										CFNotificationSuspensionBehaviorDeliverImmediately);
+		CFNotificationCenterAddObserver( CFNotificationCenterGetDistributedCenter(),
+										 (__bridge void *)self,
+										 &PKAudioPlayerDidBroadcastPresence,
+										 PKAudioPlayerDidBroadcastPresenceNotification,
+										 NULL,
+										 CFNotificationSuspensionBehaviorDeliverImmediately );
+
+		[[NSNotificationCenter defaultCenter] addObserver: self
+												 selector: @selector(playerItemDidPlayToEndTime:)
+													 name: AVPlayerItemDidPlayToEndTimeNotification
+												   object: nil];
 		
-		[[NSNotificationCenter defaultCenter] addObserver:self 
-												 selector:@selector(playerItemDidPlayToEndTime:) 
-													 name:AVPlayerItemDidPlayToEndTimeNotification 
-												   object:nil];
-		
-		mPlayQueue = [NSMutableOrderedSet new];
+		mPlayQueue = [[NSMutableOrderedSet alloc] init];
 		mPulseObservers = [NSPointerArray pointerArrayWithWeakObjects];
 		
-		mRecentlyPlayedShuffleSongs = [NSMutableArray new];
-		mSongsKnownInvalidToShuffle = [NSMutableSet new];
+		mRecentlyPlayedShuffleSongs = [[NSMutableArray alloc] init];
+		mSongsKnownInvalidToShuffle = [[NSMutableSet alloc] init];
 		mShuffleMode = NO;
 		
 		mArtworkLoadQueue = dispatch_queue_create("com.roundabout.pinna.AudioPlayer.mArtworkLoadQueue", NULL);
@@ -1317,7 +1318,7 @@ static void SystemSleepCallback(void *refCon, io_service_t service, natural_t me
 		if(numberOfRecentlyPlayedSongs != -1)
 			playQueueHistory = [playQueue subarrayWithRange:NSMakeRange(0, indexOfPlayingSong + 1)];
 		else
-			playQueueHistory = [NSArray arrayWithObject:self.playingSong];
+			playQueueHistory = @[self.playingSong];
 	}
 	
 	[playQueue removeObjectsInArray:playQueueHistory];

@@ -77,7 +77,7 @@
 {
 	if((self = [super init]))
 	{
-		mErrorPresentationViewController = [ErrorPresentationViewController new];
+		mErrorPresentationViewController = [[ErrorPresentationViewController alloc] init];
 		mErrorPresentationViewController.parentView = self;
 		self.title = @"Unknown Error";
 		self.buttonTitle = @"Dismiss";

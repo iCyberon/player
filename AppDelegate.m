@@ -48,7 +48,7 @@ static NSString *const kAlwaysShowSongChangeNotificationsWithoutGrowlDefaultsKey
 		//Ensure the `Player` constant isn't nil.
 		player = [AudioPlayer sharedAudioPlayer];
 		
-		mMainWindow = [MainWindow new];
+		mMainWindow = [[MainWindow alloc] init];
 		
         [self reauthorizeAccounts];
         
@@ -93,7 +93,7 @@ static NSString *const kAlwaysShowSongChangeNotificationsWithoutGrowlDefaultsKey
 		[player addObserver:self forKeyPath:@"playingSong" options:0 context:NULL];
 		[player addObserver:self forKeyPath:@"isPaused" options:0 context:NULL];
 		
-		mBackgroundStatusView = [MenuNotificationView new];
+		mBackgroundStatusView = [[MenuNotificationView alloc] init];
 		[Player addObserver:self forKeyPath:@"artwork" options:0 context:NULL];
 		
 		if([NSSharingService class])
@@ -702,7 +702,7 @@ static NSString *const kAlwaysShowSongChangeNotificationsWithoutGrowlDefaultsKey
 {
 	if(!mPrivateListeningEnabled && !RK_FLAG_IS_SET([NSEvent modifierFlags], NSAlternateKeyMask))
 	{
-		NSAlert *confirmationAlert = [NSAlert new];
+		NSAlert *confirmationAlert = [[NSAlert alloc] init];
 		[confirmationAlert setMessageText:@"Are You Sure You Want to Turn on Private Listening?"];
 		[confirmationAlert setInformativeText:@"When private listening is turned on, now playing updates and played songs are not submitted to Last.fm."];
 		[confirmationAlert addButtonWithTitle:@"OK"];
@@ -751,7 +751,7 @@ static NSString *const kAlwaysShowSongChangeNotificationsWithoutGrowlDefaultsKey
 - (PreferencesWindow *)preferencesWindow
 {
 	if(!mPreferencesWindow)
-		mPreferencesWindow = [PreferencesWindow new];
+		mPreferencesWindow = [[PreferencesWindow alloc] init];
 	
 	return mPreferencesWindow;
 }

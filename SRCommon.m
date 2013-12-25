@@ -154,6 +154,7 @@ NSUInteger SRCocoaToCarbonFlags( NSUInteger cocoaFlags )
 //---------------------------------------------------------- 
 // SRCharacterForKeyCodeAndCarbonFlags()
 //----------------------------------------------------------
+
 NSString *SRCharacterForKeyCodeAndCarbonFlags(NSInteger keyCode, NSUInteger carbonFlags) {
 	return SRCharacterForKeyCodeAndCocoaFlags(keyCode, SRCarbonToCocoaFlags(carbonFlags));
 }

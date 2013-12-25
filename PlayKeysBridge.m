@@ -16,8 +16,9 @@ static PlayKeysBridge *sharedMediaKeyWatcher = nil;
 + (PlayKeysBridge *)playKeysBridge
 {
 	static dispatch_once_t predicate = 0;
-	dispatch_once(&predicate, ^{
-		sharedMediaKeyWatcher = [PlayKeysBridge new];
+	dispatch_once(&predicate, ^
+    {
+		sharedMediaKeyWatcher = [[PlayKeysBridge alloc] init];
 	});
 	
 	return sharedMediaKeyWatcher;

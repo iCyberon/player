@@ -17,8 +17,9 @@
 {
     static RKActivityManager *sharedActivityManager = nil;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedActivityManager = [self new];
+    dispatch_once(&onceToken, ^
+    {
+        sharedActivityManager = [[self alloc] init];
     });
     
     return sharedActivityManager;

@@ -89,15 +89,17 @@ NSInteger gNSStringGeometricsTypesetterBehavior = NSTypesetterLatestBehavior ;
 
 - (NSSize)sizeForWidth:(CGFloat)width 
 				height:(CGFloat)height
-				  font:(NSFont*)font {
-	NSSize answer = NSZeroSize ;
-	
-	if (font == nil) {
+				  font:(NSFont*)font
+{
+	NSSize answer = NSZeroSize;
+
+	if (font == nil)
+    {
 		NSLog(@"[%@ %@]: Error: cannot compute size with nil font", [self class], NSStringFromSelector(_cmd)) ;
 	}
-	else {
-		NSDictionary* attributes = [NSDictionary dictionaryWithObjectsAndKeys:
-									font, NSFontAttributeName, nil] ;
+	else
+    {
+		NSDictionary* attributes = @{ NSFontAttributeName : font };
 		answer = [self sizeForWidth:width
 							 height:height
 						 attributes:attributes] ;

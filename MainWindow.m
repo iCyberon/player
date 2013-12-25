@@ -604,7 +604,7 @@ static CGFloat const kSearchBarInteriorPadding = 7.0;
 		case kMainWindowBrowserModePlaylist:
 		{
 			if(!mPlaylistsBrowserLevel)
-				mPlaylistsBrowserLevel = [PlaylistsBrowserLevel new];
+				mPlaylistsBrowserLevel = [[PlaylistsBrowserLevel alloc] init];
 			newLevel = mPlaylistsBrowserLevel;
 			
 			break;
@@ -613,7 +613,7 @@ static CGFloat const kSearchBarInteriorPadding = 7.0;
 		case kMainWindowBrowserModeSong:
 		{
 			if(!mSongsBrowserLevel)
-				mSongsBrowserLevel = [SongsBrowserLevel new];
+				mSongsBrowserLevel = [[SongsBrowserLevel alloc] init];
 			newLevel = mSongsBrowserLevel;
 			
 			break;
@@ -622,7 +622,7 @@ static CGFloat const kSearchBarInteriorPadding = 7.0;
 		case kMainWindowBrowserModeArtist:
 		{
 			if(!mArtistsBrowserLevel)
-				mArtistsBrowserLevel = [ArtistsBrowserLevel new];
+				mArtistsBrowserLevel = [[ArtistsBrowserLevel alloc] init];
 			newLevel = mArtistsBrowserLevel;
 			
 			break;
@@ -631,7 +631,7 @@ static CGFloat const kSearchBarInteriorPadding = 7.0;
 		case kMainWindowBrowserModeAlbum:
 		{
 			if(!mAlbumsBrowserLevel)
-				mAlbumsBrowserLevel = [AlbumsBrowserLevel new];
+				mAlbumsBrowserLevel = [[AlbumsBrowserLevel alloc] init];
 			
 			newLevel = mAlbumsBrowserLevel;
 			
@@ -641,7 +641,7 @@ static CGFloat const kSearchBarInteriorPadding = 7.0;
 		case kMainWindowBrowserModeExplore:
 		{
 			if(!mExploreBrowserLevel)
-				mExploreBrowserLevel = [ExploreBrowserLevel new];
+				mExploreBrowserLevel = [[ExploreBrowserLevel alloc] init];
 			
 			newLevel = mExploreBrowserLevel;
 			
@@ -787,7 +787,7 @@ static CGFloat const kSearchBarInteriorPadding = 7.0;
 - (IBAction)showTrendingSelectionMenu:(id)sender
 {
 	if(!mExFMTrendingSourceController)
-		mExFMTrendingSourceController = [ExFMTrendingSourceController new];
+		mExFMTrendingSourceController = [[ExFMTrendingSourceController alloc] init];
 	
 	[mExFMTrendingSourceController showBelowView:oLibraryHeaderLabel];
 }
@@ -1168,7 +1168,7 @@ typedef enum {
 		mLibraryErrorBannerView = nil;
 	}
 	
-    mLibraryErrorBannerView = [ErrorBannerView new];
+    mLibraryErrorBannerView = [[ErrorBannerView alloc] init];
     mLibraryErrorBannerView.title = [error localizedDescription] ?: @"";
     
     if(player.shuffleMode)
@@ -1194,7 +1194,7 @@ typedef enum {
 		mPlaybackErrorBannerView = nil;
 	}
 	
-    mPlaybackErrorBannerView = [ErrorBannerView new];
+    mPlaybackErrorBannerView = [[ErrorBannerView alloc] init];
     mPlaybackErrorBannerView.title = [error localizedDescription] ?: @"";
     
     mPlaybackErrorBannerView.buttonTitle = @"Learn More";
@@ -1244,7 +1244,7 @@ typedef enum {
 
 - (void)browserView:(RKBrowserView *)browserView nonLeafItem:(id)item wasDoubleClickedInLevel:(RKBrowserLevel *)level
 {
-	NSArray *selectedSongs = [NSArray array];
+	NSArray *selectedSongs = @[];
 	
 	if([item isKindOfClass:[Song class]])
 		selectedSongs = level.selectedItems;
@@ -1259,7 +1259,7 @@ typedef enum {
 
 - (void)browserView:(RKBrowserView *)browserView hoverButtonForItem:(id)item wasClickedInLevel:(RKBrowserLevel *)level
 {
-	NSArray *selectedSongs = [NSArray array];
+	NSArray *selectedSongs = @[];
 	
 	if([item isKindOfClass:[Song class]])
 		selectedSongs = @[item];

@@ -18,7 +18,7 @@
 	{
 		mName = [name copy];
 		mArtist = artist;
-		mSongs = [NSMutableArray new];
+		mSongs = [[NSMutableArray alloc] init];
 		mIsCompilation = isCompilation;
 		
 		[[artist mutableArrayValueForKey:@"albums"] addObject:self];

@@ -73,7 +73,7 @@ static CGFloat const kSpinnerMargin = 4.0;
 {
 	if((self = [super initWithFrame:frame]))
 	{
-		mSpinner = [AMIndeterminateProgressIndicatorCell new];
+		mSpinner = [[AMIndeterminateProgressIndicatorCell alloc] init];
 		
 		mString = @"Header";
 		mLeftMargin = 0.0;

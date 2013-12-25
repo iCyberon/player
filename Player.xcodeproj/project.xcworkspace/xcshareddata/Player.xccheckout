@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4921B18D-BF80-4F69-BFED-278D427C3D5B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Player</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E6F5D229-D482-4BA0-8484-F974E4595DC0</key>
+		<string>ssh://github.com/woolie/player.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Player.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E6F5D229-D482-4BA0-8484-F974E4595DC0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/woolie/player.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E6F5D229-D482-4BA0-8484-F974E4595DC0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E6F5D229-D482-4BA0-8484-F974E4595DC0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>player</string>
+		</dict>
+	</array>
+</dict>
+</plist>

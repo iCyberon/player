@@ -14,8 +14,9 @@
 
 - (id)init
 {
-	if((self = [super init])) {
-		_animations = [NSMutableArray new];
+	if((self = [super init]))
+    {
+		_animations = [[NSMutableArray alloc] init];
 		_duration = 0.25;
 		_animationCurve = NSAnimationEaseInOut;
 	}
@@ -67,8 +68,9 @@
 {
     static RKAnimator *animator = nil;
 	static dispatch_once_t predicate = 0;
-	dispatch_once(&predicate, ^{
-		animator = [RKAnimator new];
+	dispatch_once(&predicate, ^
+    {
+		animator = [[RKAnimator alloc] init];
 	});
 	
 	return animator;
@@ -156,7 +158,7 @@
 
 - (RKAnimatorTransaction *)beginTransaction
 {
-	RKAnimatorTransaction *transaction = [RKAnimatorTransaction new];
+	RKAnimatorTransaction *transaction = [[RKAnimatorTransaction alloc] init];
 	return transaction;
 }
 

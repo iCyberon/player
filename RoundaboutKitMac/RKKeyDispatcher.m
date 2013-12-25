@@ -14,7 +14,7 @@
 {
 	if((self = [super init]))
 	{
-		mHandlers = [NSMutableDictionary new];
+		mHandlers = [[NSMutableDictionary alloc] init];
 	}
 	
 	return self;

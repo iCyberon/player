@@ -94,8 +94,9 @@ NSString *const LibraryDidUpdateNotification = @"LibraryDidUpdateNotification";
 {
 	static Library *sharedLibrary = nil;
 	static dispatch_once_t creationPredicate = 0;
-	dispatch_once(&creationPredicate, ^{
-		sharedLibrary = [Library new];
+	dispatch_once(&creationPredicate, ^
+    {
+		sharedLibrary = [[Library alloc] init];
 	});
 	return sharedLibrary;
 }
@@ -113,18 +114,18 @@ NSString *const LibraryDidUpdateNotification = @"LibraryDidUpdateNotification";
 	if((self = [super init]))
 	{
 		mExfmSession = [ExfmSession defaultSession];
-		mExFMSongsBeingOperatedOn = [NSMutableSet new];
-		mExFMSongsWaitingForNotification = [NSMutableSet new];
+		mExFMSongsBeingOperatedOn = [[NSMutableSet alloc] init];
+		mExFMSongsWaitingForNotification = [[NSMutableSet alloc] init];
 		
-		mExternalAlternateSongSourceIdentifiers = [NSMutableDictionary new];
+		mExternalAlternateSongSourceIdentifiers = [[NSMutableDictionary alloc] init];
 		
-		mCachedSongs = [NSArray new];
+		mCachedSongs = @[];
 		
-		mCachedPlaylists = [NSArray new];
+		mCachedPlaylists = @[];
 		mCacheUpdateQueue = dispatch_queue_create("com.roundabout.pinna.Library.mPlaylistCacheUpdateQueue", NULL);
 		dispatch_async(mCacheUpdateQueue, ^{ [self updateLibraryCaches]; });
 		
-		mCachedArtists = [NSDictionary new];
+		mCachedArtists = @{};
 		
 		[NSTimer scheduledTimerWithTimeInterval:5.0 
 										 target:self 
@@ -232,7 +233,7 @@ NSString *const LibraryDidUpdateNotification = @"LibraryDidUpdateNotification";
 {
 	NSURL *iTunesFolderLocation = [self iTunesFolderLocation];
 	if(!iTunesFolderLocation)
-		return [NSArray array];
+		return @[];
 	
     [iTunesFolderLocation startAccessingSecurityScopedResource];
 	NSError *error = nil;
@@ -247,7 +248,8 @@ NSString *const LibraryDidUpdateNotification = @"LibraryDidUpdateNotification";
 		return nil;
 	}
 	
-	return RKCollectionFilterToArray(musicFolderContents, ^BOOL(NSURL *libraryLocation) {
+	return RKCollectionFilterToArray(musicFolderContents, ^BOOL(NSURL *libraryLocation)
+    {
 		return [[libraryLocation lastPathComponent] isLike:@"*iTunes*.xml"];
 	});
 }
@@ -294,7 +296,7 @@ NSString *const LibraryDidUpdateNotification = @"LibraryDidUpdateNotification";
 			NSLog(@"Could not read iTunes library from location %@. Error: %@", iTunesLibraryLocation, error);
 	}
 	
-	return [NSDictionary dictionary];
+	return @{};
 }
 
 - (BOOL)shouldOmitITunesTrack:(NSDictionary *)track
@@ -677,7 +679,7 @@ NSString *const LibraryDidUpdateNotification = @"LibraryDidUpdateNotification";
 	{
 		if(identifier)
 			[mExternalAlternateSongSourceIdentifiers setObject:identifier forKey:song.sourceIdentifier];
-		else
+		else if(identifier)
 			[mExternalAlternateSongSourceIdentifiers removeObjectForKey:identifier];
 	}
 }

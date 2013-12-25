@@ -39,8 +39,9 @@
 {
 	static LyricsCache *sharedLyricsCache = nil;
 	static dispatch_once_t onceToken;
-	dispatch_once(&onceToken, ^{
-		sharedLyricsCache = [LyricsCache new];
+	dispatch_once(&onceToken, ^
+    {
+		sharedLyricsCache = [[LyricsCache alloc] init];
 	});
 	
 	return sharedLyricsCache;
@@ -59,12 +60,12 @@
 					 @"Could not create lyrics cache directory (%@). Error %@.", lyricsCachePath, [error localizedDescription]);
 		}
 		
-		mCachingQueue = [NSOperationQueue new];
+		mCachingQueue = [[NSOperationQueue alloc] init];
 		[mCachingQueue setName:@"com.roundabout.pinna.LyricsCache.mCachingQueue"];
 		[mCachingQueue setMaxConcurrentOperationCount:1];
 		[NSApp addImportantQueue:mCachingQueue];
 		
-		mLyricsCache = [NSCache new];
+		mLyricsCache = [[NSCache alloc] init];
 		[mLyricsCache setCountLimit:5];
 	}
 	

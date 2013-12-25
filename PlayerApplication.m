@@ -30,7 +30,7 @@
 
 - (NSArray *)importantQueues
 {
-	return [[self associatedValueForKey:@"importantQueues"] copy] ?: [NSArray array];
+	return [[self associatedValueForKey:@"importantQueues"] copy] ?: @[];
 }
 
 #pragma mark -
@@ -64,7 +64,7 @@
 	
 	NSString *name = [NSString stringWithFormat:@"%@.JSTalk", bundleIdentifier];
 	
-	mJSTalkBroadcastConnection = [NSConnection new];
+	mJSTalkBroadcastConnection = [[NSConnection alloc] init];
 	[mJSTalkBroadcastConnection setIndependentConversationQueueing:YES];
     mJSTalkObject = object;
 	[mJSTalkBroadcastConnection setRootObject:mJSTalkObject];

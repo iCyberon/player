@@ -104,8 +104,9 @@
 
 - (RKNavigationItem *)navigationItem
 {
-    if(!_navigationItem) {
-        _navigationItem = [RKNavigationItem new];
+    if(!_navigationItem)
+    {
+        _navigationItem = [[RKNavigationItem alloc] init];
         _navigationItem.title = NSStringFromClass([self class]);
     }
     

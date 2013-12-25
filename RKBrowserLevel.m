@@ -108,7 +108,7 @@
 
 - (NSArray *)dragTypes
 {
-	return [NSArray array];
+	return @[];
 }
 
 - (BOOL)isValid

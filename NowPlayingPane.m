@@ -43,8 +43,8 @@ static CGFloat const kArtworkContractedShowingSpace = 10.0;
 		
 		mMainWindow = mainWindow;
 		
-		mLyricsController = [LyricsViewController new];
-		mLyricsPopover = [NSPopover new];
+		mLyricsController = [[LyricsViewController alloc] init];
+		mLyricsPopover = [[NSPopover alloc] init];
 		mLyricsPopover.appearance = NSPopoverAppearanceHUD;
 		mLyricsPopover.behavior = NSPopoverBehaviorTransient;
 		mLyricsPopover.contentViewController = mLyricsController;

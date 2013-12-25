@@ -35,16 +35,16 @@ static NSUInteger kNumberOfConcurrentDownloads = 5;
 	{
 		mLibrary = [Library sharedLibrary];
         mExfmSession = [ExfmSession defaultSession];
-		mCachedActors = [NSArray array];
-		mCachedSongs = [NSArray array];
+		mCachedActors = @[];
+		mCachedSongs = @[];
 		
-		mArtworkCache = [NSCache new];
+		mArtworkCache = [[NSCache alloc] init];
 		[mArtworkCache setName:@"com.roundabout.pinna.ExploreBrowserLevel.mArtworkCache"];
 		[mArtworkCache setCountLimit:kLowCacheLimit];
 		
 		mArtworkBeingDownloaded = [NSMutableSet set];
 		
-		mArtworkDownloadQueue = [NSOperationQueue new];
+		mArtworkDownloadQueue = [[NSOperationQueue alloc] init];
 		[mArtworkDownloadQueue setMaxConcurrentOperationCount:kNumberOfConcurrentDownloads];
 		[mArtworkDownloadQueue setName:@"com.roundabout.pinna.ExploreBrowserLevel.mArtworkDownloadQueue"];
 		

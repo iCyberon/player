@@ -37,65 +37,61 @@ static NSArray              *padKeysArray        = nil;
         return;
     
     // Some keys need a special glyph
-	keyCodeToStringDict = [[NSDictionary alloc] initWithObjectsAndKeys:
-		@"F1", SRInt(122),
-		@"F2", SRInt(120),
-		@"F3", SRInt(99),
-		@"F4", SRInt(118),
-		@"F5", SRInt(96),
-		@"F6", SRInt(97),
-		@"F7", SRInt(98),
-		@"F8", SRInt(100),
-		@"F9", SRInt(101),
-		@"F10", SRInt(109),
-		@"F11", SRInt(103),
-		@"F12", SRInt(111),
-		@"F13", SRInt(105),
-		@"F14", SRInt(107),
-		@"F15", SRInt(113),
-		@"F16", SRInt(106),
-		@"F17", SRInt(64),
-		@"F18", SRInt(79),
-		@"F19", SRInt(80),
-		SRLoc(@"Space"), SRInt(49),
-		SRChar(KeyboardDeleteLeftGlyph), SRInt(51),
-		SRChar(KeyboardDeleteRightGlyph), SRInt(117),
-		SRChar(KeyboardPadClearGlyph), SRInt(71),
-		SRChar(KeyboardLeftArrowGlyph), SRInt(123),
-		SRChar(KeyboardRightArrowGlyph), SRInt(124),
-		SRChar(KeyboardUpArrowGlyph), SRInt(126),
-		SRChar(KeyboardDownArrowGlyph), SRInt(125),
-		SRChar(KeyboardSoutheastArrowGlyph), SRInt(119),
-		SRChar(KeyboardNorthwestArrowGlyph), SRInt(115),
-		SRChar(KeyboardEscapeGlyph), SRInt(53),
-		SRChar(KeyboardPageDownGlyph), SRInt(121),
-		SRChar(KeyboardPageUpGlyph), SRInt(116),
-		SRChar(KeyboardReturnR2LGlyph), SRInt(36),
-		SRChar(KeyboardReturnGlyph), SRInt(76),
-		SRChar(KeyboardTabRightGlyph), SRInt(48),
-		SRChar(KeyboardHelpGlyph), SRInt(114),
-		nil];    
+	keyCodeToStringDict = @{ SRInt( 122 ) : @"F1",
+                             SRInt( 120 ) : @"F2",
+                             SRInt(  99 ) : @"F3",
+                             SRInt( 118 ) : @"F4",
+                             SRInt(  96 ) : @"F5",
+                             SRInt(  97 ) : @"F6",
+                             SRInt(  98 ) : @"F7",
+                             SRInt( 100 ) : @"F8",
+                             SRInt( 101 ) : @"F9",
+                             SRInt( 109 ) : @"F10",
+                             SRInt( 103 ) : @"F11",
+                             SRInt( 111 ) : @"F12",
+                             SRInt( 105 ) : @"F13",
+                             SRInt( 107 ) : @"F14",
+                             SRInt( 113 ) : @"F15",
+                             SRInt( 106 ) : @"F16",
+                             SRInt(  64 ) : @"F17",
+                             SRInt(  79 ) : @"F18",
+                             SRInt(  80 ) : @"F19",
+                             SRInt(  49 ) : SRLoc( @"Space" ),
+                             SRInt(  51 ) : SRChar( KeyboardDeleteLeftGlyph ),
+                             SRInt( 117 ) : SRChar( KeyboardDeleteRightGlyph ),
+                             SRInt(  71 ) : SRChar( KeyboardPadClearGlyph ),
+                             SRInt( 123 ) : SRChar( KeyboardLeftArrowGlyph ),
+                             SRInt( 124 ) : SRChar( KeyboardRightArrowGlyph ),
+                             SRInt( 126 ) : SRChar( KeyboardUpArrowGlyph ),
+                             SRInt( 125 ) : SRChar( KeyboardDownArrowGlyph ),
+                             SRInt( 119 ) : SRChar( KeyboardSoutheastArrowGlyph ),
+                             SRInt( 115 ) : SRChar( KeyboardNorthwestArrowGlyph ),
+                             SRInt(  53 ) : SRChar( KeyboardEscapeGlyph ),
+                             SRInt( 121 ) : SRChar( KeyboardPageDownGlyph ),
+                             SRInt( 116 ) : SRChar( KeyboardPageUpGlyph ),
+                             SRInt(  36 ) : SRChar( KeyboardReturnR2LGlyph ),
+                             SRInt(  76 ) : SRChar( KeyboardReturnGlyph ),
+                             SRInt(  48 ) : SRChar( KeyboardTabRightGlyph ),
+                             SRInt( 114 ) : SRChar( KeyboardHelpGlyph ) };
     
     // We want to identify if the key was pressed on the numpad
-	padKeysArray = [[NSArray alloc] initWithObjects: 
-		SRInt(65), // ,
-		SRInt(67), // *
-		SRInt(69), // +
-		SRInt(75), // /
-		SRInt(78), // -
-		SRInt(81), // =
-		SRInt(82), // 0
-		SRInt(83), // 1
-		SRInt(84), // 2
-		SRInt(85), // 3
-		SRInt(86), // 4
-		SRInt(87), // 5
-		SRInt(88), // 6
-		SRInt(89), // 7
-		SRInt(91), // 8
-		SRInt(92), // 9
-		nil];
-    
+	padKeysArray = @[ SRInt(65), // ,
+                      SRInt(67), // *
+                      SRInt(69), // +
+                      SRInt(75), // /
+                      SRInt(78), // -
+                      SRInt(81), // =
+                      SRInt(82), // 0
+                      SRInt(83), // 1
+                      SRInt(84), // 2
+                      SRInt(85), // 3
+                      SRInt(86), // 4
+                      SRInt(87), // 5
+                      SRInt(88), // 6
+                      SRInt(89), // 7
+                      SRInt(91), // 8
+                      SRInt(92)]; // 9
+
     // generate the string to keycode mapping dict...
     stringToKeyCodeDict = [[NSMutableDictionary alloc] init];
     [self regenerateStringToKeyCodeMapping];

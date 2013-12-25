@@ -210,7 +210,7 @@ NSString *RKGenerateIdentifierForStrings(NSArray *strings)
         static NSMutableCharacterSet *charactersToRemove = nil;
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
-            charactersToRemove = [NSMutableCharacterSet new];
+            charactersToRemove = [[NSMutableCharacterSet alloc] init];
             [charactersToRemove formUnionWithCharacterSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             [charactersToRemove formUnionWithCharacterSet:[NSCharacterSet symbolCharacterSet]];
             [charactersToRemove formUnionWithCharacterSet:[NSCharacterSet punctuationCharacterSet]];
@@ -275,8 +275,10 @@ NSString *RKStringGetMD5Hash(NSString *string)
 
 #pragma mark -
 
-RKURLParameterStringifier kRKURLParameterStringifierDefault = ^NSString *(id value) {
-    if([value isKindOfClass:[NSArray class]] || [value isKindOfClass:[NSDictionary class]]) {
+RKURLParameterStringifier kRKURLParameterStringifierDefault = ^NSString *(id value)
+{
+    if([value isKindOfClass:[NSArray class]] || [value isKindOfClass:[NSDictionary class]])
+    {
         NSError *error = nil;
         NSData *JSONData = [NSJSONSerialization dataWithJSONObject:value options:0 error:&error];
         if(!JSONData)

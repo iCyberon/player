@@ -157,7 +157,7 @@ static NSGradient *SelectionGradientActive = nil,
 - (RKKeyDispatcher *)keyListener
 {
 	if(!mKeyListener)
-		mKeyListener = [RKKeyDispatcher new];
+		mKeyListener = [[RKKeyDispatcher alloc] init];
 	
 	return mKeyListener;
 }

@@ -34,7 +34,7 @@ RK_INLINE NSBezierPathCornerRadii NSBezierPathCornerRadiiMake(CGFloat topLeft, C
 + (NSBezierPath *)bezierPathWithRect:(NSRect)rect cornerRadii:(NSBezierPathCornerRadii)cornerRadii;
 
 + (NSBezierPath *)bezierPathWithCGPath:(CGPathRef)pathRef;
-- (CGPathRef)cgPath;
+- (CGPathRef)createCGPath;
 
 - (NSBezierPath *)pathWithStrokeWidth:(CGFloat)strokeWidth;
 

@@ -17,8 +17,9 @@ static NSUInteger const kCacheLimit = 10;
 {
     static NSCache *queueCache = nil;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        queueCache = [NSCache new];
+    dispatch_once(&onceToken, ^
+    {
+        queueCache = [[NSCache alloc] init];
         queueCache.name = @"com.roundabout.rk.queueManager.queueCache";
         queueCache.countLimit = kCacheLimit;
     });
@@ -33,8 +34,9 @@ static NSUInteger const kCacheLimit = 10;
     NSCache *queueCache = [self queueCache];
     
     NSOperationQueue *queue = [queueCache objectForKey:queueName];
-    if(!queue) {
-        queue = [NSOperationQueue new];
+    if(!queue)
+    {
+        queue = [[NSOperationQueue alloc] init];
         queue.name = queueName;
     }
     

@@ -27,8 +27,9 @@ NSString *const AccountManagerAffectedAccountKey = @"AccountManagerAffectedAccou
 {
     static AccountManager *sharedAccountManager = nil;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedAccountManager = [AccountManager new];
+    dispatch_once(&onceToken, ^
+    {
+        sharedAccountManager = [[AccountManager alloc] init];
     });
     
     return sharedAccountManager;
@@ -89,14 +90,18 @@ NSString *const AccountManagerAffectedAccountKey = @"AccountManagerAffectedAccou
 {
     NSParameterAssert(account);
     
-    RKPromise *promise = [RKPromise new];
-    [[RKQueueManager commonQueue] addOperationWithBlock:^{
+    RKPromise *promise = [[RKPromise alloc] init];
+    [[RKQueueManager commonQueue] addOperationWithBlock:^
+    {
         NSError *error = nil;
-        if([[account.descriptor.service logout] await:&error]) {
-            dispatch_sync(dispatch_get_main_queue(), ^{
+        if([[account.descriptor.service logout] await:&error])
+        {
+            dispatch_sync(dispatch_get_main_queue(), ^
+            {
                 [_accounts removeObjectForKey:account.serviceIdentifier];
                 
-                if(account) {
+                if(account)
+                {
                     [[NSNotificationCenter defaultCenter] postNotificationName:AccountManagerDidDeleteAccountNotification
                                                                         object:self
                                                                       userInfo:@{AccountManagerAffectedAccountKey: account}];
@@ -106,7 +111,9 @@ NSString *const AccountManagerAffectedAccountKey = @"AccountManagerAffectedAccou
             });
             
             [promise accept:self];
-        } else {
+        }
+        else
+        {
             [promise reject:error];
         }
     }];

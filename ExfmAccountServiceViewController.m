@@ -18,7 +18,7 @@
 
 - (RKPromise *)loginPromiseForUsername:(NSString *)username password:(NSString *)password
 {
-    RKPromise *promise = [RKPromise new];
+    RKPromise *promise = [[RKPromise alloc] init];
     [[RKQueueManager commonQueue] addOperationWithBlock:^{
         ExfmSession *session = [ExfmSession defaultSession];
         
@@ -39,7 +39,7 @@
 
 - (RKPromise *)signUpPromiseForEmail:(NSString *)email username:(NSString *)username password:(NSString *)password
 {
-    RKPromise *promise = [RKPromise new];
+    RKPromise *promise = [[RKPromise alloc] init];
     [[RKQueueManager commonQueue] addOperationWithBlock:^{
         ExfmSession *session = [ExfmSession defaultSession];
         

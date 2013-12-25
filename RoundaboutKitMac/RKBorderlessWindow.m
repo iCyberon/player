@@ -58,7 +58,7 @@ static const NSSize kBKBorderlessWindowResizerSize = { 20.0, 20.0 };
 - (RKKeyDispatcher *)keyListener
 {
 	if(!mKeyListener)
-		mKeyListener = [RKKeyDispatcher new];
+		mKeyListener = [[RKKeyDispatcher alloc] init];
 	
 	return mKeyListener;
 }

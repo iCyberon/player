@@ -42,7 +42,7 @@
     static RKImageLoader *sharedImageLoader = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedImageLoader = [RKImageLoader new];
+        sharedImageLoader = [[RKImageLoader alloc] init];
     });
     
     return sharedImageLoader;
@@ -50,11 +50,12 @@
 
 - (id)init
 {
-    if((self = [super init])) {
+    if((self = [super init]))
+    {
         self.imageMap = (__bridge NSMutableDictionary *)CFDictionaryCreateMutable(kCFAllocatorDefault, 0, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
         
         self.cacheManager = [RKFileSystemCacheManager sharedCacheManager];
-        self.inMemoryCache = [NSCache new];
+        self.inMemoryCache = [[NSCache alloc] init];
         self.inMemoryCache.name = @"com.roundabout.roundaboutkit.imageloader.inMemoryCache";
         
         self.knownInvalidCacheIdentifiers = [NSMutableSet set];

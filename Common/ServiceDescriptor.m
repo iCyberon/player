@@ -34,12 +34,13 @@ NSString *const kAccountServiceIdentifierExfm = @"Ex.fm"; //This identifier is h
 {
     static NSMutableDictionary *registeredServices = nil;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
+    dispatch_once(&onceToken, ^
+    {
         registeredServices = [NSMutableDictionary dictionary];
         
         
         
-        ServiceDescriptor *exfmService = [ServiceDescriptor new];
+        ServiceDescriptor *exfmService = [[ServiceDescriptor alloc] init];
         exfmService.accountType = kAccountTypeUsernamePassword;
         exfmService.identifier = kAccountServiceIdentifierExfm;
         exfmService.name = @"Exfm";
@@ -52,7 +53,7 @@ NSString *const kAccountServiceIdentifierExfm = @"Ex.fm"; //This identifier is h
         
         
 #if TARGET_OS_MAC && !TARGET_OS_IPHONE
-        ServiceDescriptor *lastfmService = [ServiceDescriptor new];
+        ServiceDescriptor *lastfmService = [[ServiceDescriptor alloc] init];
         lastfmService.accountType = kAccountTypeToken;
         lastfmService.identifier = kAccountServiceIdentifierLastfm;
         lastfmService.name = @"Last.fm";

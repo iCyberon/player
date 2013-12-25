@@ -104,12 +104,12 @@
 {
 	if([item.albums count] > 1)
 	{
-		AlbumsBrowserLevel *albumBrowserLevel = [AlbumsBrowserLevel new];
+		AlbumsBrowserLevel *albumBrowserLevel = [[AlbumsBrowserLevel alloc] init];
 		albumBrowserLevel.parentArtist = item;
 		return albumBrowserLevel;
 	}
 	
-	SongsBrowserLevel *songBrowserLevel = [SongsBrowserLevel new];
+	SongsBrowserLevel *songBrowserLevel = [[SongsBrowserLevel alloc] init];
 	songBrowserLevel.parent = item;
 	return songBrowserLevel;
 }

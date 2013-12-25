@@ -56,8 +56,9 @@ static NSTimeInterval const kMaintenanceTimerInterval = (RK_TIME_MINUTE * 5.0);
 {
     static RKFileSystemCacheManager *sharedCacheManager = nil;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedCacheManager = [self new];
+    dispatch_once(&onceToken, ^
+    {
+        sharedCacheManager = [[self alloc] init];
         
         dispatch_resume([self maintenanceTimer]);
     });

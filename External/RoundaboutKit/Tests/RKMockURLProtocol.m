@@ -69,7 +69,7 @@ static NSMutableArray *_Routes = nil;
     NSParameterAssert(headers);
     NSParameterAssert(data);
     
-    RKMockURLProtocolRoute *route = [RKMockURLProtocolRoute new];
+    RKMockURLProtocolRoute *route = [[RKMockURLProtocolRoute alloc] init];
     
     route.URL = url;
     route.method = method;
@@ -88,7 +88,7 @@ static NSMutableArray *_Routes = nil;
     NSParameterAssert(method);
     NSParameterAssert(error);
     
-    RKMockURLProtocolRoute *route = [RKMockURLProtocolRoute new];
+    RKMockURLProtocolRoute *route = [[RKMockURLProtocolRoute alloc] init];
     
     route.URL = url;
     route.method = method;

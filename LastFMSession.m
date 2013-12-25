@@ -21,8 +21,9 @@ static NSString *const kLastFMAPIURLString = @"http://ws.audioscrobbler.com/2.0/
 {
     static LastFMSession *defaultSession = nil;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        defaultSession = [LastFMSession new];
+    dispatch_once(&onceToken, ^
+    {
+        defaultSession = [[LastFMSession alloc] init];
     });
     
     return defaultSession;
@@ -159,8 +160,9 @@ static NSString *const kLastFMAPIURLString = @"http://ws.audioscrobbler.com/2.0/
 
 - (RKPromise *)reloginWithAccount:(Account *)account
 {
-    RKPromise *promise = [RKPromise new];
-    [[RKQueueManager commonQueue] addOperationWithBlock:^{
+    RKPromise *promise = [[RKPromise alloc] init];
+    [[RKQueueManager commonQueue] addOperationWithBlock:^
+    {
         self.sessionKey = account.token;
         
         NSError *error = nil;

@@ -31,12 +31,13 @@
 {
 	if((self = [super initWithWindowNibName:@"PreferencesWindow"]))
 	{
-		mPreferencesPanes = @{
-            @"GeneralPane": [GeneralPane new],
-            @"ArtModePane": [ArtModePane new],
-            @"HotKeysPane": [HotKeysPane new],
-            @"SocialPane": [SocialPane new],
-            @"AdvancedPane": [AdvancedPane new],
+		mPreferencesPanes = @
+        {
+            @"GeneralPane": [[GeneralPane alloc] init],
+            @"ArtModePane": [[ArtModePane alloc] init],
+            @"HotKeysPane": [[HotKeysPane alloc] init],
+            @"SocialPane": [[SocialPane alloc] init],
+            @"AdvancedPane": [[AdvancedPane alloc] init],
         };
 	}
 	

@@ -243,20 +243,20 @@
     if (keyCombo.code == ShortcutRecorderEmptyCode || keyCombo.flags == ShortcutRecorderEmptyFlags)
         return nil;
 
-    return [NSDictionary dictionaryWithObjectsAndKeys:
-            [self keyCharsIgnoringModifiers], @"characters",
-            [NSNumber numberWithInteger:keyCombo.code], @"keyCode",
-            [NSNumber numberWithUnsignedInteger:keyCombo.flags], @"modifierFlags",
-            nil];
+    return @{ @"characters" : [self keyCharsIgnoringModifiers],
+              @"keyCode" : [NSNumber numberWithInteger:keyCombo.code],
+              @"modifierFlags" : [NSNumber numberWithUnsignedInteger:keyCombo.flags] };
 }
 
 - (void)setObjectValue:(NSDictionary *)shortcut
 {
     KeyCombo keyCombo = SRMakeKeyCombo(ShortcutRecorderEmptyCode, ShortcutRecorderEmptyFlags);
-    if (shortcut != nil && [shortcut isKindOfClass:[NSDictionary class]]) {
+    if (shortcut != nil && [shortcut isKindOfClass:[NSDictionary class]])
+    {
         NSNumber *keyCode = [shortcut objectForKey:@"keyCode"];
         NSNumber *modifierFlags = [shortcut objectForKey:@"modifierFlags"];
-        if ([keyCode isKindOfClass:[NSNumber class]] && [modifierFlags isKindOfClass:[NSNumber class]]) {
+        if ([keyCode isKindOfClass:[NSNumber class]] && [modifierFlags isKindOfClass:[NSNumber class]])
+        {
             keyCombo.code = [keyCode integerValue];
             keyCombo.flags = [modifierFlags unsignedIntegerValue];
         }

@@ -45,8 +45,9 @@ RKPostProcessorBlock const kExfmPostProcessor = ^RKPossibility *(RKPossibility *
 {
     static NSOperationQueue *sessionRequestQueue = nil;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sessionRequestQueue = [NSOperationQueue new];
+    dispatch_once(&onceToken, ^
+    {
+        sessionRequestQueue = [[NSOperationQueue alloc] init];
         sessionRequestQueue.name = @"com.roundabout.pinna.ExfmSession.sessionRequestQueue";
     });
     
@@ -75,8 +76,9 @@ RKPostProcessorBlock const kExfmPostProcessor = ^RKPossibility *(RKPossibility *
 {
     static ExfmSession *defaultSession = nil;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        defaultSession = [ExfmSession new];
+    dispatch_once(&onceToken, ^
+    {
+        defaultSession = [[ExfmSession alloc] init];
     });
     
     return defaultSession;
@@ -111,7 +113,7 @@ RKPostProcessorBlock const kExfmPostProcessor = ^RKPossibility *(RKPossibility *
 	
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
-		NSMutableCharacterSet *characterSet = [NSMutableCharacterSet new];
+		NSMutableCharacterSet *characterSet = [[NSMutableCharacterSet alloc] init];
 		[characterSet formUnionWithCharacterSet:[NSCharacterSet lowercaseLetterCharacterSet]];
 		[characterSet formUnionWithCharacterSet:[NSCharacterSet decimalDigitCharacterSet]];
 		[characterSet addCharactersInString:@"_"];
@@ -209,7 +211,7 @@ RKPostProcessorBlock const kExfmPostProcessor = ^RKPossibility *(RKPossibility *
 
 - (RKPromise *)reloginWithAccount:(Account *)account
 {
-    RKPromise *promise = [RKPromise new];
+    RKPromise *promise = [[RKPromise alloc] init];
     self.username = account.username;
     self.password = account.password;
     [promise accept:self];
@@ -218,7 +220,7 @@ RKPostProcessorBlock const kExfmPostProcessor = ^RKPossibility *(RKPossibility *
 
 - (RKPromise *)logout
 {
-    RKPromise *promise = [RKPromise new];
+    RKPromise *promise = [[RKPromise alloc] init];
     self.username = nil;
     self.password = nil;
     [promise accept:self];
@@ -265,8 +267,9 @@ RKPostProcessorBlock const kExfmPostProcessor = ^RKPossibility *(RKPossibility *
 
 - (RKPromise *)allLovedSongs
 {
-    RKPromise *promise = [RKPromise new];
-    [[self.class sessionRequestQueue] addOperationWithBlock:^{
+    RKPromise *promise = [[RKPromise alloc] init];
+    [[self.class sessionRequestQueue] addOperationWithBlock:^
+    {
         NSMutableArray *allLovedSongs = [NSMutableArray array];
         NSError *error = nil;
         NSUInteger offset = 0;
@@ -296,8 +299,9 @@ RKPostProcessorBlock const kExfmPostProcessor = ^RKPossibility *(RKPossibility *
 
 - (RKPromise *)allLovedSongsOfFriends
 {
-    RKPromise *promise = [RKPromise new];
-    [[self.class sessionRequestQueue] addOperationWithBlock:^{
+    RKPromise *promise = [[RKPromise alloc] init];
+    [[self.class sessionRequestQueue] addOperationWithBlock:^
+    {
         NSMutableArray *allLovedSongs = [NSMutableArray array];
         NSError *error = nil;
         NSUInteger offset = 0;

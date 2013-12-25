@@ -136,7 +136,7 @@
 
 - (RKBrowserLevel *)childBrowserLevelForItem:(Album *)item
 {
-	SongsBrowserLevel *songLevel = [SongsBrowserLevel new];
+	SongsBrowserLevel *songLevel = [[SongsBrowserLevel alloc] init];
 	songLevel.parent = item;
 	
 	return songLevel;

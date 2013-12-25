@@ -101,21 +101,27 @@ static NSGradient *_HighlightedGradient = nil;
 		backgroundPath = [NSBezierPath bezierPathWithRoundedRect:frame xRadius:BORDER_RADIUS yRadius:BORDER_RADIUS];
 	}
     
-    if(self.isHighlighted) {
+    if(self.isHighlighted)
+    {
         [_HighlightedGradient drawInBezierPath:backgroundPath angle:90.0];
         
-        NSShadow *innerShadow = [NSShadow new];
+        NSShadow *innerShadow = [[NSShadow alloc] init];
         [innerShadow setShadowBlurRadius:4.0];
         [innerShadow setShadowOffset:NSMakeSize(0.0, -1.0)];
         [innerShadow setShadowColor:[NSColor colorWithDeviceWhite:0.0 alpha:0.4]];
         [backgroundPath fillWithInnerShadow:innerShadow];
         
         [[NSColor colorWithCalibratedRed:0.42 green:0.42 blue:0.42 alpha:1.00] set];
-    } else {
-        if([[controlView window] isMainWindow]) {
+    }
+    else
+    {
+        if([[controlView window] isMainWindow])
+        {
             [_ActiveGradient drawInBezierPath:backgroundPath angle:90.0];
             [[NSColor colorWithCalibratedRed:0.42 green:0.42 blue:0.42 alpha:1.00] set];
-        } else {
+        }
+        else
+        {
             [_InactiveGradient drawInBezierPath:backgroundPath angle:90.0];
             [[NSColor colorWithCalibratedRed:0.75 green:0.75 blue:0.75 alpha:1.00] set];
         }

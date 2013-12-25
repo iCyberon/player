@@ -322,20 +322,26 @@ static NSArray *ActiveRequestArrayGetInstanteousCopy()
     NSAssert((self.connection == nil),
              @"Cannot realize a %@ more than once.", NSStringFromClass([self class]));
     
-    [_requestQueue addOperationWithBlock:^{
-        @synchronized(self) {
-            _loadedData = [NSMutableData new];
+    [_requestQueue addOperationWithBlock:^
+    {
+        @synchronized(self)
+        {
+            _loadedData = [[NSMutableData alloc] init];
         }
         
         _isInOfflineMode = !self.connectivityManager.isConnected;
         [[RKActivityManager sharedActivityManager] incrementActivityCount];
         
-        if(_preflight) {
+        if(_preflight)
+        {
             NSError *preflightError = nil;
             NSURLRequest *newRequest = nil;
-            if((newRequest = _preflight(self.request, &preflightError))) {
+            if((newRequest = _preflight(self.request, &preflightError)))
+            {
                 self.request = newRequest;
-            } else {
+            }
+            else
+            {
                 [self invokeFailureCallbackWithError:preflightError];
                 return;
             }

@@ -79,8 +79,9 @@ static NSData *xNSImageGetRepresentation(NSImage *image, NSBitmapImageFileType t
 {
 	static ArtworkCache *sharedCache = nil;
 	static dispatch_once_t predicate = 0;
-	dispatch_once(&predicate, ^{
-		sharedCache = [ArtworkCache new];
+	dispatch_once(&predicate, ^
+    {
+		sharedCache = [[ArtworkCache alloc] init];
 	});
 	
 	return sharedCache;
@@ -88,7 +89,8 @@ static NSData *xNSImageGetRepresentation(NSImage *image, NSBitmapImageFileType t
 
 - (id)init
 {
-	if((self = [super init]))
+    self = [super init];
+	if( self != nil )
 	{
 		NSError *error = nil;
 		NSString *artworkCachePath = [self artworkCacheDirectoryPath];
@@ -99,12 +101,12 @@ static NSData *xNSImageGetRepresentation(NSImage *image, NSBitmapImageFileType t
 					 @"Could not create artwork cache directory (%@). Error %@.", artworkCachePath, [error localizedDescription]);
 		}
 		
-		mCachingQueue = [NSOperationQueue new];
+		mCachingQueue = [[NSOperationQueue alloc] init];
 		[mCachingQueue setName:@"com.roundabout.pinna.ArtworkCache.mCachingQueue"];
 		[mCachingQueue setMaxConcurrentOperationCount:1];
 		[NSApp addImportantQueue:mCachingQueue];
 		
-		mImageCache = [NSCache new];
+		mImageCache = [[NSCache alloc] init];
 		[mImageCache setCountLimit:kLowCacheLimit];
 	}
 	

@@ -33,8 +33,9 @@ static HotKeyDispatcher *sharedHotKeyDispatcher = nil;
 + (HotKeyDispatcher *)sharedHotKeyDispatcher
 {
 	static dispatch_once_t onceToken;
-	dispatch_once(&onceToken, ^{
-		sharedHotKeyDispatcher = [HotKeyDispatcher new];
+	dispatch_once(&onceToken, ^
+    {
+		sharedHotKeyDispatcher = [[HotKeyDispatcher alloc] init];
 	});
 	
 	return sharedHotKeyDispatcher;

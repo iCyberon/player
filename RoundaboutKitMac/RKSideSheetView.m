@@ -36,7 +36,7 @@
         
         [self addSubview:self.navigationController.view];
         
-        RKView *defaultBackgroundView = [RKView new];
+        RKView *defaultBackgroundView = [[RKView alloc] init];
         defaultBackgroundView.backgroundColor = [NSColor colorWithDeviceWhite:1.0 alpha:0.6];
         self.backgroundView = defaultBackgroundView;
         

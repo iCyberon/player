@@ -33,16 +33,16 @@ static NSString *const kTrendingTagUserDefaultsKey = @"ExFM_trendingTag";
 	if((self = [super init]))
 	{
 		mLibrary = [Library sharedLibrary];
-		mResults = [NSArray array];
-		mCachedTrending = [NSArray array];
+		mResults = @[];
+		mCachedTrending = @[];
 		
-		mArtworkCache = [NSCache new];
+		mArtworkCache = [[NSCache alloc] init];
 		[mArtworkCache setName:@"com.roundabout.pinna.ExploreBrowserLevel.mArtworkCache"];
 		[mArtworkCache setCountLimit:25];
 		
 		mArtworkBeingDownloaded = [NSMutableSet set];
 		
-		mArtworkDownloadQueue = [NSOperationQueue new];
+		mArtworkDownloadQueue = [[NSOperationQueue alloc] init];
 		[mArtworkDownloadQueue setMaxConcurrentOperationCount:2];
 		[mArtworkDownloadQueue setName:@"com.roundabout.pinna.ExploreBrowserLevel.mArtworkDownloadQueue"];
 		

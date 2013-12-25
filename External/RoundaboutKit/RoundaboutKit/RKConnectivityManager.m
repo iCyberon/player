@@ -145,7 +145,7 @@ static void NetworkReachabilityChanged(SCNetworkReachabilityRef target, SCNetwor
             [NSException raise:NSInternalInconsistencyException format:@"Could not schedule reachability into main run loop."];
         }
         
-        _callbackBlocks = [NSMutableArray new];
+        _callbackBlocks = [[NSMutableArray alloc] init];
     }
     
     return self;

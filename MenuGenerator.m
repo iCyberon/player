@@ -29,8 +29,9 @@
 {
 	static MenuGenerator *sharedGenerator = nil;
 	static dispatch_once_t onceToken;
-	dispatch_once(&onceToken, ^{
-		sharedGenerator = [MenuGenerator new];
+	dispatch_once(&onceToken, ^
+    {
+		sharedGenerator = [[MenuGenerator alloc] init];
 	});
 	
 	return sharedGenerator;

@@ -24,7 +24,7 @@ static NSString *const kAssociatedValuesDictionaryKey = @"NSObject.Convenience.A
 		NSMutableDictionary *associatedValues = objc_getAssociatedObject(self, (__bridge void *)kAssociatedValuesDictionaryKey);
 		if(!associatedValues)
 		{
-			associatedValues = [NSMutableDictionary new];
+			associatedValues = [[NSMutableDictionary alloc] init];
 			objc_setAssociatedObject(self, (__bridge void *)kAssociatedValuesDictionaryKey, associatedValues, OBJC_ASSOCIATION_RETAIN);
 		}
 		

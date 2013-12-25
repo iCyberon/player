@@ -23,9 +23,6 @@
 		8B12A3E016A8853C00249E0F /* FlatPreset.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D8F7313CE237A003AB19D /* FlatPreset.plist */; };
 		8B12A3E116A8853C00249E0F /* Lyrics.html in Resources */ = {isa = PBXBuildFile; fileRef = 8BBC0EDB13F9ECCB007BB813 /* Lyrics.html */; };
 		8B12A3E316A8853C00249E0F /* PlayItemButton_Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2494C614AA5BB900F33A1B /* PlayItemButton_Pressed.png */; };
-		8B12A3E416A8853C00249E0F /* ArtModeModelBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B24957B14B25DC600F33A1B /* ArtModeModelBackground.png */; };
-		8B12A3E516A8853C00249E0F /* ArtModeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B82294A14B51DF500D8EB9B /* ArtModeIcon.png */; };
-		8B12A3E616A8853C00249E0F /* HotKeysIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BCA9C1614F7E25C00E2D136 /* HotKeysIcon.png */; };
 		8B12A3E716A8853C00249E0F /* RKBrowserLevelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3B85DF1528CFBC00484474 /* RKBrowserLevelController.xib */; };
 		8B12A3E816A8853C00249E0F /* SearchBarDivider.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3B862A1528EF1700484474 /* SearchBarDivider.png */; };
 		8B12A3EB16A8853C00249E0F /* LoveItemButton_Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B427701157009AE009F8E97 /* LoveItemButton_Pressed.png */; };
@@ -79,19 +76,9 @@
 		8B12A43316A8853C00249E0F /* ScrubbingBarKnob_LeftCap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC96A6BC16012E4F00C23688 /* ScrubbingBarKnob_LeftCap@2x.png */; };
 		8B12A43416A8853C00249E0F /* NowPlayingUpperLayer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC96A6C0160135DB00C23688 /* NowPlayingUpperLayer@2x.png */; };
 		8B12A43516A8853C00249E0F /* NowPlayingLowerLayer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC496508160159160031503D /* NowPlayingLowerLayer@2x.png */; };
-		8B12A43616A8853C00249E0F /* GeneralIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEC3B5A16017726002BE01B /* GeneralIcon.png */; };
-		8B12A43716A8853C00249E0F /* GeneralIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEC3B5B16017726002BE01B /* GeneralIcon@2x.png */; };
-		8B12A43816A8853C00249E0F /* HotKeysIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEC3B5E1601779B002BE01B /* HotKeysIcon@2x.png */; };
-		8B12A43916A8853C00249E0F /* ArtModeIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEC3B601601782B002BE01B /* ArtModeIcon@2x.png */; };
 		8B12A43A16A8853C00249E0F /* ScrubbingBarStrike.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BE94CB51604E92A00E44217 /* ScrubbingBarStrike.png */; };
 		8B12A43B16A8853C00249E0F /* ScrubbingBarStrike@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC5C46301605243B00DA7DEA /* ScrubbingBarStrike@2x.png */; };
-		8B12A43C16A8853C00249E0F /* AccountsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC5C46321605376100DA7DEA /* AccountsIcon.png */; };
-		8B12A43D16A8853C00249E0F /* AccountsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC5C46331605376100DA7DEA /* AccountsIcon@2x.png */; };
 		8B12A43F16A8853C00249E0F /* NowPlayingShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA954160BD69B0004503F /* NowPlayingShadow@2x.png */; };
-		8B12A44416A8853C00249E0F /* LastFMLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6821C9160EAD3300D33837 /* LastFMLogo.png */; };
-		8B12A44516A8853C00249E0F /* LastFMLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6821CB160EAD3300D33837 /* LastFMLogo@2x.png */; };
-		8B12A44616A8853C00249E0F /* EXFMLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6821CC160EAD3300D33837 /* EXFMLogo@2x.png */; };
-		8B12A44816A8853C00249E0F /* EXFMLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD1A0B2161261C60032F672 /* EXFMLogo.png */; };
 		8B12A44B16A8853C00249E0F /* PlaybackErrorIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC56C72716240BC7006F7F30 /* PlaybackErrorIcon@2x.png */; };
 		8B12A44C16A8853C00249E0F /* PlaybackErrorIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC56C72816240BC7006F7F30 /* PlaybackErrorIcon.png */; };
 		8B12A44D16A8853C00249E0F /* ErrorPresentationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BFED72F1628E58700D6474C /* ErrorPresentationView.xib */; };
@@ -373,7 +360,6 @@
 		8B2494C614AA5BB900F33A1B /* PlayItemButton_Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayItemButton_Pressed.png; sourceTree = "<group>"; };
 		8B2494EA14AB9E8B00F33A1B /* WindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowTransition.h; sourceTree = "<group>"; };
 		8B2494EB14AB9E8B00F33A1B /* WindowTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowTransition.m; sourceTree = "<group>"; };
-		8B24957B14B25DC600F33A1B /* ArtModeModelBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArtModeModelBackground.png; sourceTree = "<group>"; };
 		8B2BAD3614B2944300058084 /* PreferencesButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesButtonCell.h; sourceTree = "<group>"; };
 		8B2BAD3714B2944300058084 /* PreferencesButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesButtonCell.m; sourceTree = "<group>"; };
 		8B324F0816D2ED0C0035FB80 /* BrowserModeMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserModeMatrix.h; sourceTree = "<group>"; };
@@ -391,7 +377,6 @@
 		8B33916A157FEECC002AE2BD /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ArtModePane.xib; sourceTree = "<group>"; };
 		8B3984B715E56F2300FB498E /* MenuGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuGenerator.h; sourceTree = "<group>"; };
 		8B3984B815E56F2300FB498E /* MenuGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuGenerator.m; sourceTree = "<group>"; };
-		8B3984DF15E5938200FB498E /* LastFMLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LastFMLogo.png; sourceTree = "<group>"; };
 		8B3B85CF1528CFB000484474 /* RKBrowserIconTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKBrowserIconTextFieldCell.h; sourceTree = "<group>"; };
 		8B3B85D01528CFB000484474 /* RKBrowserIconTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKBrowserIconTextFieldCell.m; sourceTree = "<group>"; };
 		8B3B85D11528CFB000484474 /* RKBrowserLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKBrowserLevel.h; sourceTree = "<group>"; };
@@ -504,7 +489,6 @@
 		8B7CB5BF1759BF8000783674 /* NSObject+AssociatedValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedValues.m"; sourceTree = "<group>"; };
 		8B82294714B51BCB00D8EB9B /* SimpleNumberTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleNumberTransformer.h; sourceTree = "<group>"; };
 		8B82294814B51BCB00D8EB9B /* SimpleNumberTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleNumberTransformer.m; sourceTree = "<group>"; };
-		8B82294A14B51DF500D8EB9B /* ArtModeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArtModeIcon.png; sourceTree = "<group>"; };
 		8B8E2B9E173B484E00C6A205 /* AccountServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountServiceViewController.h; sourceTree = "<group>"; };
 		8B8E2B9F173B484E00C6A205 /* AccountServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountServiceViewController.m; sourceTree = "<group>"; };
 		8B8E2BA0173B484E00C6A205 /* AccountServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountServiceViewController.xib; sourceTree = "<group>"; };
@@ -547,7 +531,6 @@
 		8BCA9C0E14F7E05F00E2D136 /* SRRecorderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderControl.m; sourceTree = "<group>"; };
 		8BCA9C0F14F7E05F00E2D136 /* SRValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRValidator.h; sourceTree = "<group>"; };
 		8BCA9C1014F7E05F00E2D136 /* SRValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRValidator.m; sourceTree = "<group>"; };
-		8BCA9C1614F7E25C00E2D136 /* HotKeysIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HotKeysIcon.png; sourceTree = "<group>"; };
 		8BCA9C2914F7E9C200E2D136 /* HotKeyDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotKeyDispatcher.h; sourceTree = "<group>"; };
 		8BCA9C2A14F7E9C200E2D136 /* HotKeyDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotKeyDispatcher.m; sourceTree = "<group>"; };
 		8BCD99BC156802E50029465E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -596,11 +579,6 @@
 		FC56C72716240BC7006F7F30 /* PlaybackErrorIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlaybackErrorIcon@2x.png"; sourceTree = "<group>"; };
 		FC56C72816240BC7006F7F30 /* PlaybackErrorIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaybackErrorIcon.png; sourceTree = "<group>"; };
 		FC5C46301605243B00DA7DEA /* ScrubbingBarStrike@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrubbingBarStrike@2x.png"; sourceTree = "<group>"; };
-		FC5C46321605376100DA7DEA /* AccountsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AccountsIcon.png; sourceTree = "<group>"; };
-		FC5C46331605376100DA7DEA /* AccountsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AccountsIcon@2x.png"; sourceTree = "<group>"; };
-		FC6821C9160EAD3300D33837 /* LastFMLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LastFMLogo.png; sourceTree = "<group>"; };
-		FC6821CB160EAD3300D33837 /* LastFMLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LastFMLogo@2x.png"; sourceTree = "<group>"; };
-		FC6821CC160EAD3300D33837 /* EXFMLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EXFMLogo@2x.png"; sourceTree = "<group>"; };
 		FC73152115F2CEF800C9FA2B /* ExFMPopoverSelectionBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExFMPopoverSelectionBackground@2x.png"; sourceTree = "<group>"; };
 		FC7AA954160BD69B0004503F /* NowPlayingShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NowPlayingShadow@2x.png"; sourceTree = "<group>"; };
 		FC9161AC15F9D52C00E59B17 /* Playlist_Regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Playlist_Regular.png; sourceTree = "<group>"; };
@@ -616,17 +594,12 @@
 		FC96A6C0160135DB00C23688 /* NowPlayingUpperLayer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NowPlayingUpperLayer@2x.png"; sourceTree = "<group>"; };
 		FCA1E34D162CA23B00A2D186 /* MavenProBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MavenProBold.otf; sourceTree = "<group>"; };
 		FCC49EFF15F0265600B5BA40 /* ExFMPopoverHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExFMPopoverHeader@2x.png"; sourceTree = "<group>"; };
-		FCD1A0B2161261C60032F672 /* EXFMLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EXFMLogo.png; sourceTree = "<group>"; };
 		FCD4517B161B8EFD00E167C7 /* MavenProMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MavenProMedium.otf; sourceTree = "<group>"; };
 		FCD4517C161B8EFE00E167C7 /* MavenProRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MavenProRegular.otf; sourceTree = "<group>"; };
 		FCE7319E15F9304500587B6C /* Playlist_Remote_Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Playlist_Remote_Selected@2x.png"; sourceTree = "<group>"; };
 		FCE7319F15F9304600587B6C /* Playlist_Remote@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Playlist_Remote@2x.png"; sourceTree = "<group>"; };
 		FCE731A315F937F300587B6C /* Playlist_Friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Playlist_Friends@2x.png"; sourceTree = "<group>"; };
 		FCE731A615F9595C00587B6C /* Playlist_Friends_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Playlist_Friends_Selected.png; sourceTree = "<group>"; };
-		FCEC3B5A16017726002BE01B /* GeneralIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GeneralIcon.png; sourceTree = "<group>"; };
-		FCEC3B5B16017726002BE01B /* GeneralIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GeneralIcon@2x.png"; sourceTree = "<group>"; };
-		FCEC3B5E1601779B002BE01B /* HotKeysIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HotKeysIcon@2x.png"; sourceTree = "<group>"; };
-		FCEC3B601601782B002BE01B /* ArtModeIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ArtModeIcon@2x.png"; sourceTree = "<group>"; };
 		FCFF16EB15F6869E000D0475 /* Playlist_Regular_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Playlist_Regular_Selected.png; sourceTree = "<group>"; };
 		FCFF16EC15F6869E000D0475 /* Playlist_Regular_Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Playlist_Regular_Selected@2x.png"; sourceTree = "<group>"; };
 		FCFF16EE15F6869E000D0475 /* Playlist_Regular@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Playlist_Regular@2x.png"; sourceTree = "<group>"; };
@@ -685,7 +658,6 @@
 				8B9CB0191600E98B00997288 /* Now Playing */,
 				8B9FC64115DB0D1C00DE381B /* Browser */,
 				8B9FC64015DB0CF500DE381B /* Browser Icons */,
-				8B9FC63F15DB0CCA00DE381B /* Preferences */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -1132,27 +1104,6 @@
 			name = "Now Playing";
 			sourceTree = "<group>";
 		};
-		8B9FC63F15DB0CCA00DE381B /* Preferences */ = {
-			isa = PBXGroup;
-			children = (
-				FCD1A0B2161261C60032F672 /* EXFMLogo.png */,
-				FC6821C9160EAD3300D33837 /* LastFMLogo.png */,
-				FC6821CB160EAD3300D33837 /* LastFMLogo@2x.png */,
-				FC6821CC160EAD3300D33837 /* EXFMLogo@2x.png */,
-				FC5C46321605376100DA7DEA /* AccountsIcon.png */,
-				FC5C46331605376100DA7DEA /* AccountsIcon@2x.png */,
-				FCEC3B601601782B002BE01B /* ArtModeIcon@2x.png */,
-				FCEC3B5E1601779B002BE01B /* HotKeysIcon@2x.png */,
-				FCEC3B5A16017726002BE01B /* GeneralIcon.png */,
-				FCEC3B5B16017726002BE01B /* GeneralIcon@2x.png */,
-				8B3984DF15E5938200FB498E /* LastFMLogo.png */,
-				8B24957B14B25DC600F33A1B /* ArtModeModelBackground.png */,
-				8B82294A14B51DF500D8EB9B /* ArtModeIcon.png */,
-				8BCA9C1614F7E25C00E2D136 /* HotKeysIcon.png */,
-			);
-			name = Preferences;
-			sourceTree = "<group>";
-		};
 		8B9FC64015DB0CF500DE381B /* Browser Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -1396,9 +1347,6 @@
 				8B12A3E116A8853C00249E0F /* Lyrics.html in Resources */,
 				E2D8BD39186A9B82004CAC2D /* BrowserIcons.xcassets in Resources */,
 				8B12A3E316A8853C00249E0F /* PlayItemButton_Pressed.png in Resources */,
-				8B12A3E416A8853C00249E0F /* ArtModeModelBackground.png in Resources */,
-				8B12A3E516A8853C00249E0F /* ArtModeIcon.png in Resources */,
-				8B12A3E616A8853C00249E0F /* HotKeysIcon.png in Resources */,
 				8B920BDC1771656800539974 /* AccountRemovalViewController.xib in Resources */,
 				8B12A3E716A8853C00249E0F /* RKBrowserLevelController.xib in Resources */,
 				8B12A3E816A8853C00249E0F /* SearchBarDivider.png in Resources */,
@@ -1456,19 +1404,9 @@
 				8B12A43316A8853C00249E0F /* ScrubbingBarKnob_LeftCap@2x.png in Resources */,
 				8B12A43416A8853C00249E0F /* NowPlayingUpperLayer@2x.png in Resources */,
 				8B12A43516A8853C00249E0F /* NowPlayingLowerLayer@2x.png in Resources */,
-				8B12A43616A8853C00249E0F /* GeneralIcon.png in Resources */,
-				8B12A43716A8853C00249E0F /* GeneralIcon@2x.png in Resources */,
-				8B12A43816A8853C00249E0F /* HotKeysIcon@2x.png in Resources */,
-				8B12A43916A8853C00249E0F /* ArtModeIcon@2x.png in Resources */,
 				8B12A43A16A8853C00249E0F /* ScrubbingBarStrike.png in Resources */,
 				8B12A43B16A8853C00249E0F /* ScrubbingBarStrike@2x.png in Resources */,
-				8B12A43C16A8853C00249E0F /* AccountsIcon.png in Resources */,
-				8B12A43D16A8853C00249E0F /* AccountsIcon@2x.png in Resources */,
 				8B12A43F16A8853C00249E0F /* NowPlayingShadow@2x.png in Resources */,
-				8B12A44416A8853C00249E0F /* LastFMLogo.png in Resources */,
-				8B12A44516A8853C00249E0F /* LastFMLogo@2x.png in Resources */,
-				8B12A44616A8853C00249E0F /* EXFMLogo@2x.png in Resources */,
-				8B12A44816A8853C00249E0F /* EXFMLogo.png in Resources */,
 				8B12A44B16A8853C00249E0F /* PlaybackErrorIcon@2x.png in Resources */,
 				8B12A44C16A8853C00249E0F /* PlaybackErrorIcon.png in Resources */,
 				8B12A44D16A8853C00249E0F /* ErrorPresentationView.xib in Resources */,

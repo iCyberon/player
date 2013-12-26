@@ -466,7 +466,7 @@
 		8BFED72C1628E44F00D6474C /* ErrorBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorBannerView.h; sourceTree = "<group>"; };
 		8BFED72D1628E44F00D6474C /* ErrorBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorBannerView.m; sourceTree = "<group>"; };
 		8BFED72F1628E58700D6474C /* ErrorPresentationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorPresentationView.xib; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Player-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Resources/Player-Info.plist"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Player-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; name = "Player-Info.plist"; path = "Resources/Player-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E2D8BD2D186A8819004CAC2D /* Player.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Player.xcassets; sourceTree = "<group>"; };
 		E2D8BD32186A9B63004CAC2D /* NowPlaying.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NowPlaying.xcassets; sourceTree = "<group>"; };
 		E2D8BD36186A9B70004CAC2D /* Browser.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Browser.xcassets; sourceTree = "<group>"; };

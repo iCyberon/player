@@ -148,7 +148,6 @@
 		E2D8BD33186A9B63004CAC2D /* NowPlaying.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8BD32186A9B63004CAC2D /* NowPlaying.xcassets */; };
 		E2D8BD37186A9B70004CAC2D /* Browser.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8BD36186A9B70004CAC2D /* Browser.xcassets */; };
 		E2D8BD3B186A9B8A004CAC2D /* Preferences.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8BD3A186A9B8A004CAC2D /* Preferences.xcassets */; };
-		E2D8BD3D186A9B92004CAC2D /* BottomBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8BD3C186A9B92004CAC2D /* BottomBar.xcassets */; };
 		E2D8BD3F186A9F21004CAC2D /* ScrubbingBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8BD3E186A9F21004CAC2D /* ScrubbingBar.xcassets */; };
 		E2D8BD41186AA04D004CAC2D /* BrowserIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8BD40186AA04D004CAC2D /* BrowserIcons.xcassets */; };
 		E2D8BD46186B51C9004CAC2D /* SocialPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D8BD44186B51C9004CAC2D /* SocialPane.xib */; };
@@ -284,7 +283,7 @@
 		8B12A4DE16A8853C00249E0F /* Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B12A62A16AE222600249E0F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8B12A62D16AE259800249E0F /* FileEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileEnumerator.h; path = Source/Model/FileEnumerator.h; sourceTree = SOURCE_ROOT; };
-		8B183475158E4E5C007D6859 /* Genres.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Genres.plist; sourceTree = "<group>"; };
+		8B183475158E4E5C007D6859 /* Genres.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = Genres.plist; sourceTree = "<group>"; };
 		8B2494C314AA34D400F33A1B /* BackgroundArtworkDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundArtworkDisplayView.h; sourceTree = "<group>"; };
 		8B2494C414AA34D400F33A1B /* BackgroundArtworkDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundArtworkDisplayView.m; sourceTree = "<group>"; };
 		8B2494EA14AB9E8B00F33A1B /* WindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowTransition.h; sourceTree = "<group>"; };
@@ -330,7 +329,7 @@
 		8B4277321571334D009F8E97 /* RKBrowserScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKBrowserScrollView.m; sourceTree = "<group>"; };
 		8B42774E15713B04009F8E97 /* NowPlayingPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NowPlayingPane.m; sourceTree = "<group>"; };
 		8B42774F15713B04009F8E97 /* NowPlayingPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NowPlayingPane.h; sourceTree = "<group>"; };
-		8B42775115713B0C009F8E97 /* NowPlayingPane.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NowPlayingPane.xib; sourceTree = "<group>"; };
+		8B42775115713B0C009F8E97 /* NowPlayingPane.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NowPlayingPane.xib; path = Source/Controllers/MainWindow/English.lproj/NowPlayingPane.xib; sourceTree = SOURCE_ROOT; };
 		8B458D2C14E97C1800442B79 /* LastFMDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastFMDefines.m; sourceTree = "<group>"; };
 		8B458D2E14E97C2100442B79 /* LastFMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastFMDefines.h; sourceTree = "<group>"; };
 		8B47457A15A4B39300ABD986 /* QueueTableScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueTableScrollView.h; sourceTree = "<group>"; };
@@ -467,12 +466,11 @@
 		8BFED72C1628E44F00D6474C /* ErrorBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorBannerView.h; sourceTree = "<group>"; };
 		8BFED72D1628E44F00D6474C /* ErrorBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorBannerView.m; sourceTree = "<group>"; };
 		8BFED72F1628E58700D6474C /* ErrorPresentationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorPresentationView.xib; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Player-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Player-Info.plist"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Player-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Resources/Player-Info.plist"; sourceTree = "<group>"; };
 		E2D8BD2D186A8819004CAC2D /* Player.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Player.xcassets; sourceTree = "<group>"; };
 		E2D8BD32186A9B63004CAC2D /* NowPlaying.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NowPlaying.xcassets; sourceTree = "<group>"; };
 		E2D8BD36186A9B70004CAC2D /* Browser.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Browser.xcassets; sourceTree = "<group>"; };
 		E2D8BD3A186A9B8A004CAC2D /* Preferences.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Preferences.xcassets; sourceTree = "<group>"; };
-		E2D8BD3C186A9B92004CAC2D /* BottomBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BottomBar.xcassets; sourceTree = "<group>"; };
 		E2D8BD3E186A9F21004CAC2D /* ScrubbingBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ScrubbingBar.xcassets; sourceTree = "<group>"; };
 		E2D8BD40186AA04D004CAC2D /* BrowserIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BrowserIcons.xcassets; sourceTree = "<group>"; };
 		E2D8BD45186B51C9004CAC2D /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Accounts/English.lproj/SocialPane.xib; sourceTree = "<group>"; };
@@ -677,7 +675,8 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
-			sourceTree = "<group>";
+			path = Source/OtherSources;
+			sourceTree = SOURCE_ROOT;
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
@@ -689,7 +688,6 @@
 				E2D8BD36186A9B70004CAC2D /* Browser.xcassets */,
 				E2D8BD40186AA04D004CAC2D /* BrowserIcons.xcassets */,
 				E2D8BD3A186A9B8A004CAC2D /* Preferences.xcassets */,
-				E2D8BD3C186A9B92004CAC2D /* BottomBar.xcassets */,
 				1E41991A12E37F2C007038D2 /* UserDefaults.plist */,
 				8D1107310486CEB800E47090 /* Player-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -697,8 +695,8 @@
 				8BBC0EDB13F9ECCB007BB813 /* Lyrics.html */,
 				8B183475158E4E5C007D6859 /* Genres.plist */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
@@ -968,7 +966,8 @@
 				8B3984B815E56F2300FB498E /* MenuGenerator.m */,
 			);
 			name = Other;
-			sourceTree = "<group>";
+			path = Source/Controllers/Other;
+			sourceTree = SOURCE_ROOT;
 		};
 		8BE4F6981724C33E00A0A2B5 /* Service View Controllers */ = {
 			isa = PBXGroup;
@@ -1024,7 +1023,8 @@
 				FCD4517C161B8EFE00E167C7 /* MavenProRegular.otf */,
 			);
 			name = Fonts;
-			sourceTree = "<group>";
+			path = Resources/Fonts;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -1128,7 +1128,6 @@
 			files = (
 				8B12A3C116A8853C00249E0F /* InfoPlist.strings in Resources */,
 				8B12A3C216A8853C00249E0F /* MainMenu.xib in Resources */,
-				E2D8BD3D186A9B92004CAC2D /* BottomBar.xcassets in Resources */,
 				E2D8BD46186B51C9004CAC2D /* SocialPane.xib in Resources */,
 				8B12A3CD16A8853C00249E0F /* MainWindow.xib in Resources */,
 				8B12A3CE16A8853C00249E0F /* UserDefaults.plist in Resources */,
@@ -1284,7 +1283,8 @@
 				089C165DFE840E0CC02AAC07 /* English */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
 		};
 		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
@@ -1357,10 +1357,10 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Player_Prefix.pch;
+				GCC_PREFIX_HEADER = Source/OtherSources/Player_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "$(SRCROOT)/Player-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Player-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -1391,10 +1391,10 @@
 				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Player_Prefix.pch;
+				GCC_PREFIX_HEADER = Source/OtherSources/Player_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "$(SRCROOT)/Player-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Player-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				ONLY_ACTIVE_ARCH = NO;

@@ -344,10 +344,10 @@
 		8B4EFA73162B2A4500449CF5 /* ErrorBannerButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorBannerButtonCell.m; sourceTree = "<group>"; };
 		8B607461158E48FD0040CEB4 /* ExFMTrendingSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExFMTrendingSourceController.h; sourceTree = "<group>"; };
 		8B607462158E48FD0040CEB4 /* ExFMTrendingSourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExFMTrendingSourceController.m; sourceTree = "<group>"; };
-		8B607464158E490C0040CEB4 /* ExFMTrendingSource.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExFMTrendingSource.xib; sourceTree = SOURCE_ROOT; };
+		8B607464158E490C0040CEB4 /* ExFMTrendingSource.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExFMTrendingSource.xib; path = Source/Controllers/MainWindow/English.lproj/ExFMTrendingSource.xib; sourceTree = SOURCE_ROOT; };
 		8B698D49158514B800382B74 /* LyricsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsViewController.h; sourceTree = "<group>"; };
 		8B698D4A158514B800382B74 /* LyricsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsViewController.m; sourceTree = "<group>"; };
-		8B698D4C1585153A00382B74 /* Lyrics.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Lyrics.xib; sourceTree = "<group>"; };
+		8B698D4C1585153A00382B74 /* Lyrics.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Lyrics.xib; path = Source/Controllers/MainWindow/English.lproj/Lyrics.xib; sourceTree = SOURCE_ROOT; };
 		8B698DE8158E3F5B00382B74 /* AMIndeterminateProgressIndicatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMIndeterminateProgressIndicatorCell.h; sourceTree = "<group>"; };
 		8B698DE9158E3F5B00382B74 /* AMIndeterminateProgressIndicatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMIndeterminateProgressIndicatorCell.m; sourceTree = "<group>"; };
 		8B71F26515A899820075018E /* TimeValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeValueTransformer.h; sourceTree = "<group>"; };
@@ -412,14 +412,14 @@
 		8B7CB5BF1759BF8000783674 /* NSObject+AssociatedValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AssociatedValues.m"; path = "Source/Model/NSObject+AssociatedValues.m"; sourceTree = SOURCE_ROOT; };
 		8B82294714B51BCB00D8EB9B /* SimpleNumberTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleNumberTransformer.h; sourceTree = "<group>"; };
 		8B82294814B51BCB00D8EB9B /* SimpleNumberTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleNumberTransformer.m; sourceTree = "<group>"; };
-		8B8E2B9E173B484E00C6A205 /* AccountServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountServiceViewController.h; sourceTree = "<group>"; };
-		8B8E2B9F173B484E00C6A205 /* AccountServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountServiceViewController.m; sourceTree = "<group>"; };
-		8B8E2BA0173B484E00C6A205 /* AccountServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountServiceViewController.xib; sourceTree = "<group>"; };
-		8B8E2BA9173B55F100C6A205 /* ExfmAccountServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExfmAccountServiceViewController.h; sourceTree = "<group>"; };
-		8B8E2BAA173B55F100C6A205 /* ExfmAccountServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExfmAccountServiceViewController.m; sourceTree = "<group>"; };
-		8B8E2BB1173B57AD00C6A205 /* LastfmAccountServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastfmAccountServiceViewController.h; sourceTree = "<group>"; };
-		8B8E2BB2173B57AD00C6A205 /* LastfmAccountServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastfmAccountServiceViewController.m; sourceTree = "<group>"; };
-		8B8E2BB3173B57AD00C6A205 /* LastfmAccountServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LastfmAccountServiceViewController.xib; sourceTree = "<group>"; };
+		8B8E2B9E173B484E00C6A205 /* AccountServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountServiceViewController.h; path = Source/Controllers/Preferences/Accounts/ServiceViewControllers/AccountServiceViewController.h; sourceTree = SOURCE_ROOT; };
+		8B8E2B9F173B484E00C6A205 /* AccountServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountServiceViewController.m; path = Source/Controllers/Preferences/Accounts/ServiceViewControllers/AccountServiceViewController.m; sourceTree = SOURCE_ROOT; };
+		8B8E2BA0173B484E00C6A205 /* AccountServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccountServiceViewController.xib; path = Source/Controllers/Preferences/Accounts/ServiceViewControllers/English.lproj/AccountServiceViewController.xib; sourceTree = SOURCE_ROOT; };
+		8B8E2BA9173B55F100C6A205 /* ExfmAccountServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExfmAccountServiceViewController.h; path = Source/Controllers/Preferences/Accounts/ServiceViewControllers/ExfmAccountServiceViewController.h; sourceTree = SOURCE_ROOT; };
+		8B8E2BAA173B55F100C6A205 /* ExfmAccountServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExfmAccountServiceViewController.m; path = Source/Controllers/Preferences/Accounts/ServiceViewControllers/ExfmAccountServiceViewController.m; sourceTree = SOURCE_ROOT; };
+		8B8E2BB1173B57AD00C6A205 /* LastfmAccountServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LastfmAccountServiceViewController.h; path = Source/Controllers/Preferences/Accounts/ServiceViewControllers/LastfmAccountServiceViewController.h; sourceTree = SOURCE_ROOT; };
+		8B8E2BB2173B57AD00C6A205 /* LastfmAccountServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LastfmAccountServiceViewController.m; path = Source/Controllers/Preferences/Accounts/ServiceViewControllers/LastfmAccountServiceViewController.m; sourceTree = SOURCE_ROOT; };
+		8B8E2BB3173B57AD00C6A205 /* LastfmAccountServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LastfmAccountServiceViewController.xib; path = Source/Controllers/Preferences/Accounts/ServiceViewControllers/English.lproj/LastfmAccountServiceViewController.xib; sourceTree = SOURCE_ROOT; };
 		8B93819115B0CD99006D68AD /* ScriptingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScriptingController.h; path = Source/Controllers/ScriptingController.h; sourceTree = SOURCE_ROOT; };
 		8B93819215B0CD99006D68AD /* ScriptingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScriptingController.m; path = Source/Controllers/ScriptingController.m; sourceTree = SOURCE_ROOT; };
 		8B94F121163CAFB4008FA38B /* NS(Attributed)String+Geometrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NS(Attributed)String+Geometrics.h"; path = "Source/Views/ErrorHandling/NS(Attributed)String+Geometrics.h"; sourceTree = SOURCE_ROOT; };
@@ -595,7 +595,8 @@
 				8B607464158E490C0040CEB4 /* ExFMTrendingSource.xib */,
 			);
 			name = "Main Window";
-			sourceTree = "<group>";
+			path = Source/Controllers/MainWindow;
+			sourceTree = SOURCE_ROOT;
 		};
 		1E963E25130DF2D700AA0968 /* Cells */ = {
 			isa = PBXGroup;
@@ -982,7 +983,8 @@
 				8B8E2BB3173B57AD00C6A205 /* LastfmAccountServiceViewController.xib */,
 			);
 			name = "Service View Controllers";
-			sourceTree = "<group>";
+			path = Source/Controllers/Preferences;
+			sourceTree = SOURCE_ROOT;
 		};
 		8BE806E21792177A00DFEC35 /* Products */ = {
 			isa = PBXGroup;
